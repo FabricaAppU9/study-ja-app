@@ -1,0 +1,22 @@
+// ==========================================================================
+// IMPORTS
+// ==========================================================================
+@import "../../styles/base/variables.scss";
+
+.banner{
+    background: $black;
+
+    .col{
+        max-height: 250px;
+        .container-img-user{
+            position: relative;
+            height: 250px;
+    
+            .responsive-img{
+                position: absolute;
+                bottom: -30px;
+                padding: 5px;
+            }
+        }
+    }    
+}

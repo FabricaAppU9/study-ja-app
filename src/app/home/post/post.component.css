@@ -1,0 +1,29 @@
+.post-img{
+    margin-top: 20px;
+}
+.viewpost-btn{
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    bottom: 0;
+    vertical-align: bottom;
+}
+
+/* VOTAÇÃO BOTÕES */
+.post-ratings{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.estrelas input[type=radio] {
+    display: none;
+  }
+  .estrelas label i.fa{
+    font-size: 1.5em
+  }
+  .estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+  }
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+  }
