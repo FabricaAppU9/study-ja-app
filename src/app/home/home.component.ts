@@ -8,6 +8,9 @@ import { HomeService } from '../home.service';
 })
 export class HomeComponent implements OnInit {
 
+  getDetail(){
+    
+  }
   trabalhos: Array<any>;
 
   constructor(private homeService: HomeService) { }
