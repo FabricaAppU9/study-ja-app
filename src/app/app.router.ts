@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
 // Imports do components roteados
-import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { PostComponent } from './home/post/post.component';
@@ -15,10 +14,6 @@ const APP_ROUTES: Routes = [
   { 
     path: '', 
     component: SignInComponent 
-  },
-  { 
-    path: 'login', 
-    component: LoginComponent 
   },
   { 
     path: 'register', 

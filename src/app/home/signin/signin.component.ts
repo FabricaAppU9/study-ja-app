@@ -11,7 +11,7 @@ export class SignInComponent implements OnInit {
 
     constructor(
         private formBuilder: FormBuilder,
-        private authService: AuthService
+        //private authService: AuthService
     ){}
 
     ngOnInit(): void{
@@ -21,7 +21,7 @@ export class SignInComponent implements OnInit {
         })
     }
 
-    login(){
+    /*login(){
         const userName = this.loginForm.get('userName').value;
         const password = this.loginForm.get('password').value;
 
@@ -34,5 +34,5 @@ export class SignInComponent implements OnInit {
                     this.loginForm.reset();
                 }
             );
-    }
+    }*/
 }

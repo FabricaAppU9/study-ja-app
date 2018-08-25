@@ -19,7 +19,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { PostsComponent } from './posts/posts.component';
 
-
 import { DashboardModule } from './dashboard/dashboard.module';
 import { PostsModule } from './posts/posts.module';
 import { HomeModule } from './home/home.module';
