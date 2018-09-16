@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PostComponent } from '../home/post/post.component';
+//import { PostComponent } from '../home/post/post.component';
 import { ReaderComponent } from './post/reader/reader.component';
 import { PostsService } from './posts.service';
 
@@ -10,7 +10,7 @@ import { PostsService } from './posts.service';
     CommonModule
   ],
   declarations: [
-    PostComponent,
+ //PostComponent,
     ReaderComponent
   ],
   providers: [
