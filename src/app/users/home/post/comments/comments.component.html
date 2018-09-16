@@ -1,0 +1,10 @@
+<div class="row">
+  <h6>Comentários</h6>
+  <app-comment-send (newComment)="newComment($event)"></app-comment-send>
+</div>
+
+<div class="row">
+    <div>
+        <app-comment *ngFor="let comment of comments" [comment]='comment' photo="{{comment.photo}}"></app-comment>
+    </div>
+</div>
