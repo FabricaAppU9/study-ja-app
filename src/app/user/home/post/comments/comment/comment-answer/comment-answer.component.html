@@ -1,0 +1,26 @@
+<div [style.display]="answers.length > 1 ? 'block' : 'none'">
+    <div class="row">
+
+        <div class="col s8 offset-s3 l3 offset-l1" >
+            <strong (click)="toggle_answer()">{{state_answer}} resposta 
+              <i style="vertical-align:middle;" class="tiny material-icons">{{state_answer_icon}}</i></strong> 
+        </div>
+    
+        
+    </div>
+    <div class="row" [style.display]="state_answer == 'Ver' ? 'none' : 'block' ">
+          
+          <div class="row answer" *ngFor="let answer of answers">
+                <div class="col s2 offset-s2 l1 offset-l1" >
+                   <div style="width:30px" class="right">
+                        <app-thumbnail-user></app-thumbnail-user>
+                   </div>
+                </div>
+                <div class="col s8 l10 box-answer-comment" >
+                    {{answer.comment}}
+                </div>
+          </div>
+
+    </div>
+</div>
+
