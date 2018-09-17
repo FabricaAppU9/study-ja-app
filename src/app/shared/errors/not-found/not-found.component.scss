@@ -1,0 +1,12 @@
+.container{
+    .wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .text-error{
+            color: #3b3b3b;
+        }
+    }
+}

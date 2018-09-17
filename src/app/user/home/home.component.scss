@@ -1,0 +1,41 @@
+// ==========================================================================
+// Imports do modulo
+// ==========================================================================
+@import '../../../assets/styles/_base/base';
+
+.banner{
+    position: relative;
+
+    height: 200px;
+
+    z-index: -998;
+    
+    background: {
+        image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('../../../assets/images/banner__main.jpg');
+        position: attachment;
+        repeat: no-repeat;
+        size: cover;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .banner-actionbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        bottom: 0;
+        position: absolute;
+    
+        width: 100%;
+    
+        background: rgba($black, 0.6);
+    
+        p{
+            width: 50%;
+    
+            color: $white;
+        }
+    }
+}

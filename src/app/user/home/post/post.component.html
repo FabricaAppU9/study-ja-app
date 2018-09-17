@@ -1,0 +1,40 @@
+<header [headerColor]="'blue'"></header>
+
+<div class="container">
+    <div class="row">
+        <figure class="col s10 offset-s1 post-image">
+            <img src="https://http2.mlstatic.com/livro-harry-potter-e-a-cmara-secreta-capa-dura-novo-lacrado-D_NQ_NP_732839-MLB26492967186_122017-F.jpg" class="responsive-img" alt="">
+        </figure>
+
+        <div class="col s10 offset-s1 post-title">
+            <div class="row post-badges">
+                <span class="new badge blue" data-badge-caption="Favorito"></span>
+                <span class="new badge red" data-badge-caption="Mais curtido"></span>
+            </div>
+            <h1>Vinte mil léguas submarinas</h1>
+        </div>
+
+        <div class="col s10 offset-s1 post-description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aspernatur eius quo dolor optio, quis harum possimus, beatae provident laboriosam quaerat dignissimos consectetur dolores nisi et! Doloribus ad harum quia!</p>
+        </div>
+
+        <div class="col s10 offset-s1 post-actions">
+            <div class="row">
+                <ratings></ratings>
+                <likes></likes>
+            </div>
+            <div class="row">
+                <a class="waves-effect waves-light btn col s12 blue" [routerLink]="['/viewer', 2, nomelivro]">Ler Resumo</a>    
+            </div>
+            <div class="row">
+                <a class="waves-effect waves-light btn col s12 white">Comentar</a>
+            </div>            
+        </div>
+
+        <div class="col s10 offset-s1 post-suggested">
+            <h6>Sugeridos para você</h6>
+            <post-list></post-list>
+        </div>
+    </div>
+</div>
+

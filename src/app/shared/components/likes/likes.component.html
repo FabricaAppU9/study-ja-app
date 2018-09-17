@@ -1,0 +1,17 @@
+<ul class="post-likes">
+    <li><i class="material-icons"
+        [ngStyle]="{
+            'color': isActiveLike ? activeColor : defaultColor
+        }"
+        (click)="onClickLike('like')">thumb_up</i>
+        15,9k
+    </li>
+
+    <li><i class="material-icons" 
+        [ngStyle]="{
+            'color': isActiveDislike ? activeColor : defaultColor
+        }"
+        (click)="onClickLike('dislike')">thumb_down</i>
+        2k
+    </li>
+</ul>
