@@ -34,7 +34,7 @@ import { CommentsModule } from './post/comments/comments.module';
         CommentsModule
     ],
     exports:[
-        
+        CommentsModule
     ],
     providers: [
         PostListService,
