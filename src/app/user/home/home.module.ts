@@ -10,7 +10,7 @@ import { HeaderComponent } from '../shared/components/header/header.component';
 import { PostListService } from './post-list/post-list.service';
 import { UserRoutingModule } from '../user.routing.module';
 import { RatingsComponents } from '../../shared/components/ratings/ratings.component';
-import { LikesComponent } from '../../shared/components/likes/likes.component';
+//import { LikesComponent } from '../../shared/components/likes/likes.component';
 import { PostService } from './post/post.service';
 import { PostTextComponent } from './post-text/post-text.component';
 import { CommentsModule } from './post/comments/comments.module';
@@ -22,7 +22,7 @@ import { CommentsModule } from './post/comments/comments.module';
         PostListComponent,
         HeaderComponent,
         RatingsComponents,
-        LikesComponent,
+        //LikesComponent,
         PostTextComponent
     ],
     imports:[
