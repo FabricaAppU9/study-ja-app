@@ -13,6 +13,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 //import { SigninComponent } from './signin/signin.component';
 import { PostsComponent } from "./posts/posts.component";
 import { UsersComponent } from "./users/users.component";
+import { HeaderComponent } from "./shared/components/header/header.component";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { UsersComponent } from "./users/users.component";
         DashboardComponent,
         //SigninComponent,
         PostsComponent,
-        UsersComponent
+        UsersComponent,
+        HeaderComponent
     ],
     exports: [
             
