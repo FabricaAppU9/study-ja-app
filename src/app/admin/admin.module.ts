@@ -14,6 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PostsComponent } from "./posts/posts.component";
 import { UsersComponent } from "./users/users.component";
 import { HeaderComponent } from "./shared/components/header/header.component";
+import { SidebarComponent } from "./shared/components/sidebar/sidebar.component";
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { HeaderComponent } from "./shared/components/header/header.component";
         //SigninComponent,
         PostsComponent,
         UsersComponent,
-        HeaderComponent
+        HeaderComponent,
+        SidebarComponent
     ],
     exports: [
             

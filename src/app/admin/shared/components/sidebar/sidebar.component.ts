@@ -1,9 +1,10 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'sidebar',
+    selector: 'admin-sidebar',
+    moduleId: module.id,
     templateUrl: './sidebar.component.html',
-    styleUrls: ['']
+    styleUrls: ['./sidebar.component.scss']
 })
 
 export class SidebarComponent{

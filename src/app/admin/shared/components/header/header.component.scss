@@ -1,11 +1,64 @@
+@charset "UTF-8";
+
+// Mixins
+@import "../../../../../assets/styles/_components/color";
+
+// Theme do projeto
+@import "../../../../../assets/styles/theme.scss";
+
+// Variables que serão utilizadas nos componentes;
+@import "../../../../../assets/styles/_theme-components/variables";
+
+// Components do Header
+@import "../../../../../assets/styles/_theme-components/avatar";
+@import "../../../../../assets/styles/_theme-components/header";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------
     Page Header
 ------------------------------------------*/
-@import '../../../../../assets/styles/components/color';
+@import '../../../../../assets/styles/_components/color';
 
 @import '../../../../../assets/styles/_base/colors';
 @import '../../../../../assets/styles/_themes/fixed-menu/variables';
-//@import '../../../../../assets/styles/_theme-components/global';
 @import '../../../../../assets/styles/_themes/fixed-menu/typography';
 
 

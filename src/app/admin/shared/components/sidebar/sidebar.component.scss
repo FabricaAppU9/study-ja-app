@@ -2,6 +2,25 @@
     Main Menu - SideNav
 ------------------------------------------*/
 
+@import '../../../../../assets/styles/_components/color';
+//@import '../../../assets/styles/_base/colors';
+@import '../../../../../assets/styles/_themes/fixed-menu/theme';
+@import '../../../../../assets/styles/_theme-components/variables';
+
+@import "../../../../../assets/styles/_theme-components/global";
+//@import "../../../../../assets/styles/_theme-components/helper";
+//@import "../../../../../assets/styles/_theme-components/typography";
+//@import "../../../../../assets/styles/_theme-components/color";
+//@import "../../../../../assets/styles/_theme-components/avatar";
+
+//@import "../../../../../assets/styles/_theme-components/preloader";
+//@import "../../../../../assets/styles/_theme-components/header";
+
+
+//@import '../../../../../assets/styles/_themes/fixed-menu/variables';
+//@import '../../../../../assets/styles/_themes/fixed-menu/typography';
+//@import '../../../../../assets/styles/_theme-components/slideout';
+
 nav {
 	&.top-nav {
 		height: 122px;
@@ -157,7 +176,7 @@ ul.side-nav {
 				white-space: nowrap; 
 			}
 			&.user-details {
-				//background: $sidenav-img-bg no-repeat center center;
+				background-image: url('../../../../../assets/images/gallary/12.png') no-repeat center center;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;

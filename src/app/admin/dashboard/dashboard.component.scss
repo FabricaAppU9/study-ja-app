@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+// Materialize Mixin e cores
+@import "../../../assets/styles/_components/mixins";
+@import "../../../assets/styles/_components/color";
+
+// Theme da Dashboard - Carrega variaveis importantes utilizadas nos componentes - Não remover!
+@import "../../../assets/styles/theme";
+
+// Variables que são utilizadas nos componentes - Não remover!
+@import "../../../assets/styles/_theme-components/variables";
+
+// Components da Dashboard
+@import "../../../assets/styles/_theme-components/global";
+@import "../../../assets/styles/_theme-components/helper";
+@import "../../../assets/styles/_theme-components/color";
+@import "../../../assets/styles/_theme-components/card";
+
