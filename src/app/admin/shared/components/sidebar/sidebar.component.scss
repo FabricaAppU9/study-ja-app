@@ -44,7 +44,8 @@ nav {
     transition: .3s ease all;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
+	backface-visibility: hidden;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 	&.native-scroll{
 		overflow-y:scroll !important;
 	}
@@ -64,6 +65,15 @@ nav {
 	&.fixed.leftside-navigation .collapsible-body li.active {
 		background-color: $sidenav-active-bg;
 	}
+
+	//
+	// Remove a borda e o box shadow do component
+	.collapsible{
+		box-shadow: none;
+		border: none;
+	}
+	// Fim
+
 	.collapsible-body li a {
 		// margin: 0 1rem 0 3rem;
 	}
@@ -150,7 +160,7 @@ nav {
 }
 ul.side-nav {
 	&.leftside-navigation {
-		top: 64px;
+		margin-top: 0;
 		overflow: hidden;	
 		height: 100%;
 		hr {
@@ -176,7 +186,9 @@ ul.side-nav {
 				white-space: nowrap; 
 			}
 			&.user-details {
-				background-image: url('../../../../../assets/images/gallary/12.png') no-repeat center center;
+				background-image: url('../../../../../assets/images/gallary/12.png');
+				background-repeat: no-repeat;
+				background-position: center center;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;

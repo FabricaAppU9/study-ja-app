@@ -15,6 +15,7 @@ import { PostsComponent } from "./posts/posts.component";
 import { UsersComponent } from "./users/users.component";
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { SidebarComponent } from "./shared/components/sidebar/sidebar.component";
+import { AdminComponent } from "./admin.component";
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SidebarComponent } from "./shared/components/sidebar/sidebar.component"
         AdminRoutesModule
     ],
     declarations: [
+        AdminComponent,
         DashboardComponent,
         //SigninComponent,
         PostsComponent,

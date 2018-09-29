@@ -247,10 +247,10 @@ select {
 }
 #left-sidebar-nav {
 	position: fixed;
-	width: 100px;
-	left: 180px;
+	width: auto;
+	//left: 180px; remove a margin e alinha na esquerda
 	z-index: 999;
-	height: auto;
+	height: 100%;
 	span.badge.new {
 		line-height: 20px;
 		margin-top: 11px;

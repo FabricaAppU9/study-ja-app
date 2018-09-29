@@ -6,17 +6,39 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PostsComponent } from './posts/posts.component';
 import { UsersComponent } from './users/users.component';
+import { AdminComponent } from './admin.component';
 
 const adminRoutes: Routes = [
     {
-        path: 'my-dashboard',
-        component: DashboardComponent,
+        path: 'dashboard',
+        component: AdminComponent,
+        children: [
+            {
+                path: '',
+                pathMatch: 'full',
+                redirectTo: 'my-dashboard'
+            },
+            {
+                path: 'my-dashboard',
+                component: DashboardComponent
+            },
+            {
+                path: 'manage-posts',
+                component: PostsComponent
+            },
+            {
+                path: 'manage-users',
+                component: UsersComponent
+            }
+        ]
     },
 
+    /*
     {
         path: 'posts',
         component: PostsComponent,
     },
+    */
 
     {
         path: 'users',

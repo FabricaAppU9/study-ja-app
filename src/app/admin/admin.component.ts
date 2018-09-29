@@ -2,8 +2,8 @@ import { Component } from "@angular/core";
 
 
 @Component({
-    templateUrl: './login.component.html',
-    styleUrls: ['./login.component.scss']
+    templateUrl: './admin.component.html',
+    styleUrls: ['./admin.component.scss']
 })
 
 export class AdminComponent{

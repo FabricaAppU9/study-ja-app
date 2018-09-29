@@ -7,14 +7,15 @@ import { AdminModule } from './admin/admin.module';
 import { UserModule } from './user/user.module';
 
 import { AppRoutingModule } from './app.routing.module';
-import { AdminComponent } from './admin/admin.component';
+//import { AdminComponent } from './admin/admin.component';
 import { ErrorsModule } from './shared/errors/errors.module';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './admin/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
