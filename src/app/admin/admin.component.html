@@ -1,21 +1,13 @@
 <admin-header></admin-header>
-    <admin-sidebar></admin-sidebar>
+<admin-sidebar></admin-sidebar>
 
-    <!--admin-header></admin-header-->
-<!-- START MAIN -->
 <div id="main">
-        <!-- START WRAPPER -->
-        <div class="wrapper">
-            <!--admin-sidebar></admin-sidebar-->
-    
-            <section id="content">
-                <!--start container-->
-                <div class="container">
-    <router-outlet></router-outlet>
-
-</div>
-<!--end container-->
-</section>
-<!-- END CONTENT -->
-</div>
+    <div class="wrapper">
+        <breadcrumb></breadcrumb>
+        <section id="content">
+            <div class="container">
+                <router-outlet></router-outlet>
+            </div>
+        </section>
+    </div>
 </div>

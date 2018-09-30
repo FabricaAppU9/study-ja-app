@@ -16,11 +16,14 @@ import { UsersComponent } from "./users/users.component";
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { SidebarComponent } from "./shared/components/sidebar/sidebar.component";
 import { AdminComponent } from "./admin.component";
-
+import { UsersListComponent } from "./users/users-list/users-list.component";
+import { PostsModule } from "./posts/posts.module";
+import { BreadcrumbComponent } from "./shared/components/breadcrumb/breadcrumb.component";
 
 @NgModule({
     imports: [
-        AdminRoutesModule
+        AdminRoutesModule,
+        PostsModule
     ],
     declarations: [
         AdminComponent,
@@ -29,7 +32,8 @@ import { AdminComponent } from "./admin.component";
         PostsComponent,
         UsersComponent,
         HeaderComponent,
-        SidebarComponent
+        SidebarComponent,
+        BreadcrumbComponent
     ],
     exports: [
             
