@@ -7,6 +7,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PostsComponent } from './posts/posts.component';
 import { UsersComponent } from './users/users.component';
 import { AdminComponent } from './admin.component';
+import { patch } from 'webdriver-js-extender';
+import { UsersAdminComponent } from './users/users-admin/users-admin.component';
 
 const adminRoutes: Routes = [
     {
@@ -29,6 +31,10 @@ const adminRoutes: Routes = [
             {
                 path: 'manage-users',
                 component: UsersComponent
+            },
+            {
+                path: 'manage-admin',
+                component: UsersAdminComponent
             }
         ]
     },

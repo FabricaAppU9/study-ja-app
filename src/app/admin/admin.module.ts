@@ -19,6 +19,7 @@ import { AdminComponent } from "./admin.component";
 import { UsersListComponent } from "./users/users-list/users-list.component";
 import { PostsModule } from "./posts/posts.module";
 import { BreadcrumbComponent } from "./shared/components/breadcrumb/breadcrumb.component";
+import { UsersAdminComponent } from "./users/users-admin/users-admin.component";
 
 @NgModule({
     imports: [
@@ -33,7 +34,9 @@ import { BreadcrumbComponent } from "./shared/components/breadcrumb/breadcrumb.c
         UsersComponent,
         HeaderComponent,
         SidebarComponent,
-        BreadcrumbComponent
+        BreadcrumbComponent,
+        UsersListComponent,
+        UsersAdminComponent
     ],
     exports: [
             
