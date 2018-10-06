@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 
 
 /* 
@@ -20,15 +21,16 @@ import { UsersListComponent } from "./users/users-list/users-list.component";
 import { PostsModule } from "./posts/posts.module";
 import { BreadcrumbComponent } from "./shared/components/breadcrumb/breadcrumb.component";
 
+
 @NgModule({
     imports: [
+        CommonModule,
         AdminRoutesModule,
         PostsModule
     ],
     declarations: [
         AdminComponent,
         DashboardComponent,
-        //SigninComponent,
         PostsComponent,
         UsersComponent,
         HeaderComponent,

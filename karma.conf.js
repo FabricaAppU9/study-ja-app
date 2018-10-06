@@ -22,6 +22,11 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
+    files: [
+      { pattern: 'node_modules/jquery/dist/jquery.js', watched: false},
+      { pattern: 'node_modules/materialize-css/dist/js/materialize.js', watched: false},
+      { pattern: './src/test.ts', watched: false}
+    ],
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,

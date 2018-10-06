@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter } from "@angular/core";
 
 @Component({
     selector: 'posts-list',
@@ -6,4 +6,6 @@ import { Component } from "@angular/core";
     styleUrls: ['./posts-list.component.scss']
 })
 
-export class PostsListComponent{}
+export class PostsListComponent{
+
+}

@@ -12,10 +12,6 @@ import { ErrorsModule } from './shared/errors/errors.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './admin/login/login.component';
 
-import { MaterializeModule } from 'angular2-materialize';
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,8 +23,7 @@ import { MaterializeModule } from 'angular2-materialize';
     AdminModule,
     UserModule,
     ErrorsModule,
-    HttpClientModule,
-    MaterializeModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
