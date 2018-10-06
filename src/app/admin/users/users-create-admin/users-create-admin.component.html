@@ -1,0 +1,15 @@
+<a class="modal-trigger btn green" (click)="openModal()">Criar novo usuário Admin</a>
+
+
+
+<!-- Modal Structure -->
+<div id="modal01" class="modal bottom-sheet" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+    <div class="modal-content">
+      <h4>Criar usuário Admin</h4>
+      <p>Só criar o forms</p>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat">Criar</a>
+        <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Fechar</a>
+    </div>
+  </div>

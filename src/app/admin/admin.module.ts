@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 
 
 /* 
@@ -20,26 +21,31 @@ import { UsersListComponent } from "./users/users-list/users-list.component";
 import { PostsModule } from "./posts/posts.module";
 import { BreadcrumbComponent } from "./shared/components/breadcrumb/breadcrumb.component";
 import { UsersAdminComponent } from "./users/users-admin/users-admin.component";
+import { UsersCreateAdminComponent } from "./users/users-create-admin/users-create-admin.component";
+import { MaterializeModule } from "angular2-materialize";
 
 @NgModule({
     imports: [
+        CommonModule,
         AdminRoutesModule,
-        PostsModule
+        PostsModule,
+        MaterializeModule
+        
     ],
     declarations: [
         AdminComponent,
         DashboardComponent,
-        //SigninComponent,
         PostsComponent,
         UsersComponent,
         HeaderComponent,
         SidebarComponent,
         BreadcrumbComponent,
         UsersListComponent,
-        UsersAdminComponent
+        UsersAdminComponent,
+        UsersCreateAdminComponent
     ],
     exports: [
-            
+        UsersAdminComponent
     ],
     providers:[
         
