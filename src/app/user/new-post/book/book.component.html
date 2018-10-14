@@ -1,0 +1,32 @@
+<section class="s12" [style.display]="type == 'book' ? 'block' : 'none'">
+  <form [formGroup]="book" >
+  <div class="card">
+    <div class="card-content">
+        <span class="card-title">Criar Resumo Livro</span>
+         <div class="row">
+            <div class="col s12 input-field">
+                <input  id="title" type="text"  formControlName="title">
+                <label class="active" for="title">Título</label>
+             </div>
+         </div>
+         <div class="row">
+            <div class="col s4 input-field">
+                <input  id="publishing_company" type="text"  formControlName="publishing_company">
+                <label class="active" for="publishing_company">Editora</label>
+            </div>
+            <div class="col s4 input-field">
+                <input  id="volume" type="text" formControlName="volume">
+                <label class="active" for="volume">Volume</label>
+            </div>
+            <div class="col s4 input-field">
+                <input id="publishing_company" type="text" formControlName="year">
+                <label class="active" for="publishing_company">Ano</label>
+            </div>
+         </div>
+
+         
+        </div>
+      </div>
+      <input type="submit" class="btn right" [disabled]="!book.valid">
+    </form>
+</section>

@@ -1,0 +1,25 @@
+<header [headerColor]="'blue'"></header>
+<section class="container">
+  <div class="row">
+    <div class="s12 center-align">
+      <h5>Nova publicação</h5>
+    </div>
+  </div>
+  <div class="row">
+      <div class="category s12 center-align">
+          <label>
+            <input (click)="select_register($event)" class="with-gap" name="type" value="article" type="radio" checked  />
+            <span>Resumo de Artigo</span>
+          </label>
+          <label>
+            <input (click)="select_register($event)" class="with-gap" name="type" value="book" type="radio"  />
+            <span>Resumo de Livro</span>
+          </label>
+        </div>
+  </div>
+  <div class="row">
+    <book [type]="type_register"></book>
+    <article [type]="type_register"></article>
+  </div>
+
+</section>
