@@ -15,9 +15,9 @@
               <div class="col s12">
                 <table class="highlight centered">
                   <thead>
-                    <tr>
-                      <th>Id</th>
-                      <th>Titulo</th>
+                    <tr *ngFor="let post of posts">
+                      <th>{{ post.tra_id }}</th>
+                      <th>{{ post.tra_id }}</th>
                       <th>Tipo</th>
                       <th>Categoria</th>
                       <th>Autor</th>

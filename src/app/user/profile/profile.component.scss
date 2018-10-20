@@ -18,21 +18,22 @@
         width: 100%;
     }
 
-    .banner-actionbar{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .banner-footer{
         bottom: 0;
         position: absolute;
     
         width: 100%;
     
-        background: rgba($black, 0.6);
     
-        p{
-            width: 50%;
-    
-            color: $white;
+        .profile-img{
+            bottom: -30px;
+            position: absolute;
+            
+
+            .img{
+                width: 100%;
+                border: 4px solid #ccc;
+            }
         }
     }
 }

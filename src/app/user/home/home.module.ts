@@ -14,15 +14,15 @@ import { RatingsComponents } from '../../shared/components/ratings/ratings.compo
 import { PostService } from './post/post.service';
 import { PostTextComponent } from './post-text/post-text.component';
 import { CommentsModule } from './post/comments/comments.module';
+import { HeaderModule } from '../shared/components/header/header.module';
 
 @NgModule({
     declarations:[
         HomeComponent,
         PostComponent,
         PostListComponent,
-        HeaderComponent,
+        //HeaderComponent,
         RatingsComponents,
-        //LikesComponent,
         PostTextComponent
     ],
     imports:[
@@ -31,7 +31,8 @@ import { CommentsModule } from './post/comments/comments.module';
         UserRoutingModule,
 
         //Modulos da aplicação
-        CommentsModule
+        CommentsModule,
+        HeaderModule
     ],
     exports:[
         CommentsModule

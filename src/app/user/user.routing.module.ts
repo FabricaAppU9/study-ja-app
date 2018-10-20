@@ -4,6 +4,7 @@ import { Routes, RouterModule, Router } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { PostComponent } from "./home/post/post.component";
 import { PostTextComponent } from "./home/post-text/post-text.component";
+import { ProfileComponent } from "./profile/profile.component";
 
 const userRoutes: Routes = [
     {
@@ -17,6 +18,24 @@ const userRoutes: Routes = [
     {
         path: 'viewer/:id/:titulo',
         component: PostTextComponent
+    },
+    {
+        path: 'profile',
+        children: [
+            {
+                path: '',
+                pathMatch: 'full',
+                redirectTo: 'my-profile'
+            },
+            {
+                path: 'my-profile',
+                component: ProfileComponent
+            },
+            {
+                path: ':userName',
+                component: ProfileComponent
+            }
+        ]
     }
 ]
 

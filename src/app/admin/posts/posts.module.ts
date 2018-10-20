@@ -5,10 +5,12 @@ import { PostsDetailComponent } from "./posts-detail/posts-detail.component";
 import { MaterializeModule } from 'angular2-materialize';
 import { PostsActionComponent } from "./posts-action/posts-action.component";
 import { PostDisapprovedComponent } from "./posts-disapproved/posts-disapproved.component";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     imports: [
-        MaterializeModule
+        MaterializeModule,
+        CommonModule
     ],
     exports: [
         PostsDetailComponent,

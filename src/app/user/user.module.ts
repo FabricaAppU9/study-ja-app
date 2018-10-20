@@ -10,13 +10,15 @@ import { SignupComponent } from './signup/signup.component';
 
 // Import Modulos de funcionalidade
 import { HomeModule } from "./home/home.module";
+import { ProfileModule } from "./profile/profile.module";
 
 
 @NgModule({
     imports: [ 
         CommonModule,
         UserRoutingModule,
-        HomeModule
+        HomeModule,
+        ProfileModule
     ],
     declarations: [ 
         SigninComponent,
