@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 
 import { Post } from "./post-list";
 
-const API = 'http://localhost:41890/resumos/';
+const API = 'http://localhost:3000/resumos/';
 
 @Injectable()
 
@@ -14,7 +14,7 @@ export class PostListService{
     listFromPosts(tipo: string){
         var headers = new HttpHeaders()
             //headers = headers.append("Content-Type", "application/json");
-            //headers = headers.append("Access-Control-Allow-Origin", "*");
+            headers = headers.append("Access-Control-Allow-Origin", "*");
             //headers = headers.append("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
             //headers = headers.append( "Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
             headers = headers.set("apitoken", "XjpcXLgDcrXwgNXue6HDjQfBrDC2Lqm8QbsjPaAMfkG5yfNNyxeP7mVt");
