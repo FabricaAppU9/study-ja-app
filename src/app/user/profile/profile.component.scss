@@ -3,6 +3,9 @@
 // ==========================================================================
 @import '../../../assets/styles/_base/base';
 
+.row{
+    margin-bottom: 0;
+}
 .banner{
     position: relative;
 
@@ -19,6 +22,8 @@
     }
 
     .banner-footer{
+        clear: both;
+        top: 25px;
         bottom: 0;
         position: absolute;
     
@@ -27,7 +32,9 @@
     
         .profile-img{
             bottom: -30px;
-            position: absolute;
+            top: 30px;
+            clear: both;
+            position: relative;
             
 
             .img{
@@ -36,4 +43,48 @@
             }
         }
     }
+}
+
+.profile-name{
+    height: 100%;
+    margin-top: 25px;
+    clear: both;
+
+    small{
+        clear: both;
+    }
+
+    h5 {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.profile-desc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h6{
+        text-align: center;
+        font-weight: bold;
+    }
+
+    p{
+        text-align: center;
+        font-size: 0.9em;
+    }
+    &-edit{
+        text-align: center;
+        font-size: 1.0em;
+
+        i{
+            font-size: 1.0em;
+        }
+    }
+}
+
+.btn-newpost{
+    position: fixed;
+    top: 85vh;
+    right: 10px;
 }

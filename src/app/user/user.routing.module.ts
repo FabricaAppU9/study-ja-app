@@ -5,6 +5,7 @@ import { HomeComponent } from "./home/home.component";
 import { PostComponent } from "./home/post/post.component";
 import { PostTextComponent } from "./home/post-text/post-text.component";
 import { ProfileComponent } from "./profile/profile.component";
+import { ProfileSettingsComponent } from "./profile/profile-settings/profile-settings.component";
 
 const userRoutes: Routes = [
     {
@@ -30,6 +31,10 @@ const userRoutes: Routes = [
             {
                 path: 'my-profile',
                 component: ProfileComponent
+            },
+            {
+                path: 'my-profile/settings',
+                component: ProfileSettingsComponent
             },
             {
                 path: ':userName',
