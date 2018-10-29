@@ -1,0 +1,17 @@
+<header [headerColor]="'blue'"></header>
+
+<div class="container">
+    <div class="row">
+        <div  class="col s9">
+          <h5>{{title}}</h5>
+        </div>
+        <div class="col s3 state-align right-align ">
+         <span [className]="state_style">{{state}}</span>
+        </div>
+      </div>
+      <quill-editor (onContentChanged)="change($event)" [(ngModel)]="html_text" placeholder="Digite seu resumo aqui...." [modules]="{toobar: false}" [style]="style">
+        
+      </quill-editor>
+      <br>
+      <button class="btn right" (click)="exibe()" [disabled]="state != 'Salvo!'">Enviar Para Aprovação</button>
+    </div>
