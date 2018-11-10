@@ -1,16 +1,12 @@
 .icons{
     padding-bottom: 0.1em;
+    i{padding: 0.3em 0.3em;}
 }
-.icons i{
-    padding: 0.3em 0.3em;
-}
+
 .title{
     padding: 0em;
     font-size: 1em;
-}
-.title h1{
-    font-size: 3em;
-    font-weight: bold;
+    h1{font-size: 3em;font-weight: bold;}
 }
 .back{
     padding: 1em;
@@ -21,3 +17,21 @@
 .font-bold{
     font-weight: bold;
 }
+i{
+    color: black;
+}
+span{
+    color: black;
+}
+.inline-icon{
+    vertical-align: bottom;
+}
+.cicon{
+    color: black;
+    font-size: 1.3em;
+    padding-top: 0em;
+    vertical-align: bottom;
+    font-weight: bold;
+    
+}
+
