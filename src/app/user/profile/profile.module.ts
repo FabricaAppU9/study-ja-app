@@ -6,12 +6,14 @@ import { ProfileSettingsComponent } from "./profile-settings/profile-settings.co
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { ProfileAccessDataComponent } from "./profile-settings/profile-access-data/profile-access-data.component";
+import { LikeLabelDirective } from "../shared/directives/like-label.directive";
 
 @NgModule({
     declarations:[
         ProfileComponent,
         ProfileSettingsComponent,
-        ProfileAccessDataComponent
+        ProfileAccessDataComponent,
+        LikeLabelDirective
     ],
     imports:[
         HeaderModule,

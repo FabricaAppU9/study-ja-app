@@ -16,6 +16,9 @@ import { PostTextComponent } from './post-text/post-text.component';
 import { CommentsModule } from './post/comments/comments.module';
 import { HeaderModule } from '../shared/components/header/header.module';
 
+//Import de Terceiros
+import { FlickityModule } from "ngx-flickity";
+
 @NgModule({
     declarations:[
         HomeComponent,
@@ -32,7 +35,8 @@ import { HeaderModule } from '../shared/components/header/header.module';
 
         //Modulos da aplicação
         CommentsModule,
-        HeaderModule
+        HeaderModule,
+        FlickityModule
     ],
     exports:[
         CommentsModule

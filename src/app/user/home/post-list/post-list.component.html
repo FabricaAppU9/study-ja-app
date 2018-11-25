@@ -1,17 +1,16 @@
-<div class="row">
-    <div class="col s5 m6" *ngFor="let post of posts">
+<div class="row" [flickity]="{cellAlign: 'left', prevNextButtons: false, pageDots: false}">
+    <div class="col s5 m6" *ngFor="let post of posts" [flickityChild]>
         <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="https://http2.mlstatic.com/livro-harry-potter-e-a-cmara-secreta-capa-dura-novo-lacrado-D_NQ_NP_732839-MLB26492967186_122017-F.jpg">
             </div>
             <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">{{ post.liv_nome }}</span>
-                <!--p>I am a very simple card.</p-->
+                <p>{{ post.tra_descricao }}</p>
             </div>
             <div class="card-action">
-                <a [routerLink]="['/post', post.tra_id ]" [queryParams]="{ tipo: post.tra_tipo }">Ler Agora</a>
+                <!--a [routerLink]="['/post', post.tra_id ]" [queryParams]="{ tipo: post.tra_tipo }">Ler Agora</a-->
             </div>
         </div>    
     </div>
 </div>
-

@@ -16,12 +16,14 @@ export class PostListComponent implements OnInit{
     ngOnInit(){
         this.listarLivros();
     }
+    
 
     listarLivros(){
         this.postService
             .listFromPosts('LIVRO')
             .subscribe(
                 posts => {
+                console.log(posts[0].tra_descricao);
                 this.posts = posts
             });
     }

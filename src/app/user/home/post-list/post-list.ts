@@ -13,5 +13,6 @@ export interface Post{
     liv_editora:string,
     liv_volume:number,
     liv_ano:number,
-    liv_img_capa: null
+    liv_img_capa: null,
+    Mensagem: string
 } 

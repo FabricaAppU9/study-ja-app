@@ -1,0 +1,16 @@
+.list-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    input{
+        margin: 0 !important;
+        width: auto !important;
+    }
+
+    .input-like-label{
+        background: rgba(0,0,0,0);
+        border: none !important;
+        box-shadow: none !important;
+    }
+}

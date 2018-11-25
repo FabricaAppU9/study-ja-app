@@ -5,4 +5,12 @@ import { Component } from "@angular/core";
     templateUrl: './profile-access-data.component.html'
 })
 
-export class ProfileAccessDataComponent{}
+export class ProfileAccessDataComponent{
+
+    value: string;
+    nome: String;
+    ngOnInit(){
+       this.value = "Rafael";
+       this.nome = "Ronaldo";
+    }
+}
