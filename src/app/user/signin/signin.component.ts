@@ -1,7 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ElementRef, ViewChild } from "@angular/core";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
-import { AuthService } from "../../shared/core/auth.service";
+
 import { Router } from "@angular/router";
+import { AuthService } from "../../shared/core/auth/auth.service";
+import { PlatformDetectorService } from "../../shared/core/plataform-detector/platform-detector.service";
 
 @Component({
     templateUrl: './signin.component.html',
@@ -10,11 +12,13 @@ import { Router } from "@angular/router";
 
 export class SigninComponent implements OnInit{
     loginForm: FormGroup;
+    @ViewChild('emailInput') emailInput: ElementRef;
     
     constructor(
         private formBuilder: FormBuilder,
         private auth: AuthService,
-        private router: Router 
+        private router: Router,
+        private platformDetectorService: PlatformDetectorService
     ){}
     
     ngOnInit(): void {
@@ -35,6 +39,8 @@ export class SigninComponent implements OnInit{
                     err => {
                         console.log("Falha na autenticação");
                         this.loginForm.reset();
+                        this.platformDetectorService.isPlatformBrowser() && 
+                            this.emailInput.nativeElement.focus();
                     }
             );
     }

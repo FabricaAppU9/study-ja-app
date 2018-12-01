@@ -6,7 +6,7 @@
 
           <form [formGroup]="loginForm" (submit)="onClickLogin()">
               <div class="input-field col s12">
-                  <input formControlName="email" id="first_name" type="text" class="validate">
+                  <input #emailInput formControlName="email" id="first_name" type="text" class="validate">
                   <label for="first_name">E-mail ou Usuario</label>
                 </div>
                 <div class="input-field col s12">
