@@ -14,4 +14,5 @@ export class AuthService{
         return this
                 .http.post(API_URL + 'usuarios/login', {usu_email: email, usu_senha: senha});
     }
+    
 }

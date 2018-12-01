@@ -11,7 +11,8 @@ import { AppRoutingModule } from './app.routing.module';
 import { ErrorsModule } from './shared/errors/errors.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './admin/login/login.component';
-import { AuthService } from './shared/core/auth.service';
+import { AuthService } from './shared/core/auth/auth.service';
+import { Signup } from './shared/core/signup/signup.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AuthService } from './shared/core/auth.service';
     HttpClientModule
   ],
   providers: [
-    AuthService
+    AuthService,
+    Signup
   ],
   bootstrap: [AppComponent]
 })

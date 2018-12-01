@@ -15,12 +15,17 @@ import { ProfileModule } from "./profile/profile.module";
 import { VMessageModule } from "./shared/helpers/vmessage/vmessage.module";
 import { RouterModule } from "@angular/router";
 
+// Import Vendors
+import { MaterializeModule } from 'angular2-materialize';
+
 
 @NgModule({
     imports: [ 
         CommonModule,
         UserRoutingModule,
         ReactiveFormsModule,
+
+        MaterializeModule,
         
         HomeModule,
         ProfileModule,
