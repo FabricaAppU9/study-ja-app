@@ -1,0 +1,14 @@
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <photo></photo>
+            </div>
+            <div class="card-content">
+                <post-descript [titulo]="post.liv_nome" [description]="post.tra_descricao"></post-descript>
+            </div>
+            <div class="card-action">
+                <a [routerLink]="['/post', post.tra_id ]" [queryParams]="{ tipo: post.tra_tipo }">Ler Agora</a>
+            </div>
+        </div>    
+
+
+    

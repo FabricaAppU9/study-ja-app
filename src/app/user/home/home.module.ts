@@ -18,15 +18,18 @@ import { HeaderModule } from '../shared/components/header/header.module';
 
 //Import de Terceiros
 import { FlickityModule } from "ngx-flickity";
+//import { PostsDescriptionComponent } from './post-list/posts-description/posts-description.component';
+import { PostListModule } from './post-list/post-list.module';
 
 @NgModule({
     declarations:[
         HomeComponent,
         PostComponent,
-        PostListComponent,
+        //PostListComponent,
         //HeaderComponent,
         RatingsComponents,
-        PostTextComponent
+        PostTextComponent,
+        //PostsDescriptionComponent
     ],
     imports:[
         CommonModule,
@@ -36,7 +39,8 @@ import { FlickityModule } from "ngx-flickity";
         //Modulos da aplicação
         CommentsModule,
         HeaderModule,
-        FlickityModule
+        FlickityModule,
+        PostListModule
     ],
     exports:[
         CommentsModule

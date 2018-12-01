@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { ReactiveFormsModule } from "@angular/forms";
 
 // Modulo de roteamento
 import { UserRoutingModule } from "./user.routing.module";
@@ -11,14 +12,20 @@ import { SignupComponent } from './signup/signup.component';
 // Import Modulos de funcionalidade
 import { HomeModule } from "./home/home.module";
 import { ProfileModule } from "./profile/profile.module";
+import { VMessageModule } from "./shared/helpers/vmessage/vmessage.module";
+import { RouterModule } from "@angular/router";
 
 
 @NgModule({
     imports: [ 
         CommonModule,
         UserRoutingModule,
+        ReactiveFormsModule,
+        
         HomeModule,
-        ProfileModule
+        ProfileModule,
+        VMessageModule,
+        RouterModule
     ],
     declarations: [ 
         SigninComponent,

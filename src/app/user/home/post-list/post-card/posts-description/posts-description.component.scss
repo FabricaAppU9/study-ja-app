@@ -1,0 +1,17 @@
+@import '../../../../../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import '../../../../../../assets/styles/_base/base';
+@import '../../../../../../../node_modules/sass-flex-mixin/flex';
+
+.card-title{
+    text-align: center;
+    min-height: 40px;
+    display: flex !important;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+
+    @include breakpoint($xs){
+        font-size: 15px;
+        line-height: 22px !important;
+    }
+}

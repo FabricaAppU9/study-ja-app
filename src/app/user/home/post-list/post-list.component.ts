@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { PostListService } from './post-list.service';
 
 @Component({
@@ -9,8 +9,14 @@ import { PostListService } from './post-list.service';
 
 export class PostListComponent implements OnInit{
 
+    @Input('title') title: string;
+
     posts: any[] = [];
-    
+    listSections: String[] = [
+        'Livros',
+        'Artigos'
+    ];
+
     constructor(private postService: PostListService){ }
 
     ngOnInit(){
@@ -23,7 +29,6 @@ export class PostListComponent implements OnInit{
             .listFromPosts('LIVRO')
             .subscribe(
                 posts => {
-                console.log(posts[0].tra_descricao);
                 this.posts = posts
             });
     }
