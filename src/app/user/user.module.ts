@@ -1,47 +1,57 @@
+/**
+ * @USER MODULO - CARREGA TODAS AS FUNCIONALIDADES DO USUARIO
+ * 
+ * 1. MODULO DO ANGULAR
+ */
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { ReactiveFormsModule } from "@angular/forms";
-
-// Modulo de roteamento
-import { UserRoutingModule } from "./user.routing.module";
-
-// Modulos da aplicação
-import { SigninComponent } from './signin/signin.component';
-import { SignupComponent } from './signup/signup.component';
-
-// Import Modulos de funcionalidade
-import { HomeModule } from "./home/home.module";
-import { ProfileModule } from "./profile/profile.module";
-import { VMessageModule } from "./shared/helpers/vmessage/vmessage.module";
 import { RouterModule } from "@angular/router";
 
-// Import Vendors
+/*
+* 2. MODULO DE ROTEAMENTO DAS FUNCIONALIDADES DO USUARIO
+*/
+import { UserRoutingModule } from "./user.routing.module";
+
+/*
+* 3. COMPONENTS DA APLICAÇÃO 
+*/
+import { SignupComponent } from './signup/signup.component';
+
+/*
+* 4. MODULOS DA APLICAÇÃO 
+*/
+import { HomeModule } from "./home/home.module";
+import { ProfileModule } from "./profile/profile.module";
+import { SigninModule } from "./signin/signin.module";
+
+/*
+* 5. MODULO DE TERCEIROS
+*/
 import { MaterializeModule } from 'angular2-materialize';
+import { HeaderModule } from "./shared/components/header/header.module";
 
 
 @NgModule({
-    imports: [ 
+    imports: [
+        // 1. MODULOS DO ANGULAR
         CommonModule,
         UserRoutingModule,
-        ReactiveFormsModule,
 
-        MaterializeModule,
-        
+        // 4. MODULO DA APLICAÇÃO
+        HeaderModule,
         HomeModule,
         ProfileModule,
-        VMessageModule,
-        RouterModule
+        RouterModule,
+        SigninModule,
+
+        // 5. MODULOS DE TERCEIROS
+        MaterializeModule
     ],
     declarations: [ 
-        SigninComponent,
         SignupComponent,
     ],
-    exports: [
-        
-    ],
-    providers: [
-
-    ]
+    exports: [ ],
+    providers: [ ]
 })
 
 export class UserModule{}

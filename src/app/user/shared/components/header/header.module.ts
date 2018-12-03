@@ -1,6 +1,8 @@
 import { NgModule } from "@angular/core";
 import { HeaderComponent } from "./header.component";
 
+import { MaterializeModule } from 'angular2-materialize';
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     declarations: [
@@ -8,6 +10,10 @@ import { HeaderComponent } from "./header.component";
     ],
     exports: [
         HeaderComponent
+        //MaterializeModule
+    ],
+    imports: [
+        CommonModule
     ]
 })
 

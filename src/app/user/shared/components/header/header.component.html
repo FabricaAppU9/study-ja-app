@@ -1,21 +1,18 @@
 <nav [className]="getClasses()">
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Logo</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul id="slide-out" class="side-nav">
-              <li><div class="user-view">
-                <div class="background">
-                  <!--img src="images/office.jpg"-->
-                </div>
-                <!--a href="#!user"><img class="circle" src="images/yuna.jpg"></a-->
-                <a href="#!name"><span class="white-text name">John Doe</span></a>
-                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-              </div></li>
-              <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-              <li><a href="#!">Second Link</a></li>
-              <li><div class="divider"></div></li>
-              <li><a class="subheader">Subheader</a></li>
-              <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-            </ul>
-        </div>
-</nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="logo">Logo</a>
+      <a materialize="dropdown" class='dropdown-button' href='#' data-activates='dropdown1'>Menu</a>
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a>one</a></li>
+        <li><a>two</a></li>
+        <li class="divider"></li>
+        <li><a>three</a></li>
+      </ul>
+      <ul class="right">
+        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+        <li><a href="collapsible.html"><i class="material-icons">notifications</i></a></li>
+        <li class="user-image-wrapper"><a href="mobile.html"><img src="http://archives.materializecss.com/0.100.2/images/yuna.jpg" alt="" class="circle responsive-img user-image"></a></li>
+      </ul>
+    </div>
+  </nav>
