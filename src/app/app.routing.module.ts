@@ -1,31 +1,33 @@
+/**
+ * @ROTEAMENTO RAIZ MODULO - CARREGA AS PRINCIPAIS ROTAS
+ * 
+ * 1. MODULOS DO ANGULAR
+ */
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-//import { AdminComponent } from './admin/admin.component';
-
+/*
+* 2. COMPONENTES DA APLICAÇÃO
+*/
 import { SigninComponent } from './user/signin/signin.component';
 import { SignupComponent } from './user/signup/signup.component';
-import { NotfoundComponent } from './shared/errors/not-found/not-found.component';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
-import { HomeComponent } from './user/home/home.component';
 import { LoginComponent } from './admin/login/login.component';
 
 const appRoutes: Routes = [
     {
+        // 2. ROTA PARA ACESSO AO LOGIN DO ADMINISTRADOR
         path: 'admin',
         component: LoginComponent
     },
     {
+        // 2. ROTA PARA ACESSO AO LOGIN DO USUARIO
         path: 'signin',
         component: SigninComponent
     },
     {
+        // 2. ROTA PARA ACESSO AO CADASTRO DO USUARIO
         path: 'signup',
         component: SignupComponent
-    },
-    {
-        path: 'home',
-        component: HomeComponent
     }
 ];
 

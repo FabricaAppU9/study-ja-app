@@ -1,6 +1,6 @@
 import { Component, EventEmitter } from "@angular/core";
 import { PostsListService } from './posts-list.service';
-import { PostListService } from "../../../user/home/post-list/post-list.service";
+//import { PostListService } from "../../../user/home/post-list/post-list.service";
 import { post } from "selenium-webdriver/http";
 
 @Component({
@@ -12,7 +12,7 @@ import { post } from "selenium-webdriver/http";
 export class PostsListComponent{
     posts: any[] = [];
 
-    constructor(private postList: PostListService){}
+    //constructor(private postList: PostListService){}
 
     /*
     ngOnInit(){

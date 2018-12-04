@@ -1,52 +1,46 @@
+/**
+ * @HOME MODULO - CARREGA A PAGINA PRINCIPAL DE POSTS
+ * 
+ * 1. MODULOS DO ANGULAR
+ */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
-// Imports dos modulos
-import { PostListComponent } from './post-list/post-list.component';
-import { PostComponent } from './post/post.component';
+/*
+* 2. COMPONENTES DA APLICAÇÃO
+*/
 import { HomeComponent } from './home.component';
-import { HeaderComponent } from '../shared/components/header/header.component';
-import { PostListService } from './post-list/post-list.service';
-import { UserRoutingModule } from '../user.routing.module';
 import { RatingsComponents } from '../../shared/components/ratings/ratings.component';
-import { PostService } from './post/post.service';
-import { PostTextComponent } from './post-text/post-text.component';
-import { CommentsModule } from './post/comments/comments.module';
-import { HeaderModule } from '../shared/components/header/header.module';
 
-//Import de Terceiros
-import { FlickityModule } from "ngx-flickity";
-
-import { PostListModule } from './post-list/post-list.module';
+/*
+* 3. MODULOS DA APLICAÇÃO
+*/
+import { NavbarModule } from '../shared/components/navbar/navbar.module';
+import { PostListModule } from '../post/post-list/post-list.module';
 
 @NgModule({
     declarations:[
+        // 2. COMPONENTES DA APLICAÇÃO
         HomeComponent,
-        PostComponent,
-        //PostListComponent,
-        //HeaderComponent,
-        RatingsComponents,
-        PostTextComponent,
-        //PostsDescriptionComponent
+        RatingsComponents
     ],
     imports:[
+        // 1. MODULOS DO ANGULAR
         CommonModule,
         HttpClientModule,
-        UserRoutingModule,
+        RouterModule,
 
-        //Modulos da aplicação
-        CommentsModule,
-        HeaderModule,
-        FlickityModule,
+        // 3. MODULOS DA APLICAÇÃO
+        NavbarModule,
         PostListModule
     ],
     exports:[
-        CommentsModule
+
     ],
     providers: [
-        PostListService,
-        PostService
+
     ]
 })
 

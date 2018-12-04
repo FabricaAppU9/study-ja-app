@@ -8,7 +8,7 @@ import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule } from "@angular/forms";
 
 /*
-* 2. COMPONENTS DA APLICAÇÃO
+* 2. COMPONENTES DA APLICAÇÃO
 */
 import { SigninComponent } from "./signin.component";
 
@@ -16,6 +16,14 @@ import { SigninComponent } from "./signin.component";
 * 3. MODULOS DA APLICAÇÃO
 */
 import { VMessageModule } from "../shared/helpers/vmessage/vmessage.module";
+
+/*
+* 4. SERVIÇOS DA APLICAÇÃO
+*/
+import { AuthService } from "../../shared/core/auth/auth.service";
+import { PlatformDetectorService } from "../../shared/core/plataform-detector/platform-detector.service";
+import { TokenService } from "../../shared/core/token/token.service";
+import { UserService } from "../../shared/core/user/user.service";
 
 @NgModule({
     declarations: [
@@ -34,7 +42,13 @@ import { VMessageModule } from "../shared/helpers/vmessage/vmessage.module";
         // 1. MODULOS DA APLICAÇÃO
         ReactiveFormsModule 
     ],
-    providers:[]
+    providers:[
+        // 4. SERVIÇOS DA APLICAÇÃO
+        AuthService,
+        PlatformDetectorService,
+        TokenService,
+        UserService
+    ]
 })
 
 export class SigninModule{}

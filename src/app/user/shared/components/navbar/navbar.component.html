@@ -1,0 +1,49 @@
+<nav [className]="getClasses()">
+    <div class="nav-wrapper">
+      <a class="logo">Logo</a>
+      <a materialize="dropdown" class='dropdown-button' data-activates='dropdown1'>Menu <i class="material-icons menu-icon">arrow_drop_down</i></a>
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content collection'>
+          <a class="collection-item active">Inicio</a>
+          <a class="collection-item">Ciências Exatas e da Terra</a>
+          <a class="collection-item">Ciências Biológicas</a>
+          <a class="collection-item">Engenharia / Tecnologia</a>
+          <a class="collection-item">Ciências da Saúdes</a>
+          <a class="collection-item">Ciências Agrárias</a>
+          <a class="collection-item">Ciências Sociais</a>
+          <a class="collection-item">Ciências Humanas</a>
+          <a class="collection-item">Lingüística</a>
+          <a class="collection-item">Letras e Artes</a>
+        </ul>
+
+      <ul class="right" *ngIf="(user$ | async) as user; else login">
+        <li><a><i class="material-icons">search</i></a></li>
+        <li><a><i class="material-icons">notifications</i></a></li>
+        <li class="user-image-wrapper">
+          <a materialize="dropdown" class='dropdown-button' data-activates='dropdown2' data-gutter='3'>
+            <img src="http://archives.materializecss.com/0.100.2/images/yuna.jpg" alt="" class="circle responsive-img user-image">
+          </a>
+        </li>
+
+        <ul id='dropdown2' class='dropdown-content collection user-menu' *ngIf="user">
+            <li class="collection-item avatar">
+              <img src="http://archives.materializecss.com/0.100.2/images/yuna.jpg" alt="" class="circle">
+              <span class="title">Rafael Marinho</span>
+              <p>{{ user.email }}</p>
+            </li>
+            <li class="collection-item links">
+                <a href="#!" class="collection-item">Meu Perfil</a>
+                <a href="#!" class="collection-item">Sobre o Study Já</a>
+                <a (click)="onClickLogout()" class="collection-item">Sair</a>
+            </li>
+          </ul>
+      </ul>
+
+      <ng-template #login>
+          <ul class="right">
+              <li class="right"><a><i class="material-icons">person</i></a></li>
+          </ul>
+        </ng-template>
+
+    </div>
+  </nav>

@@ -1,5 +1,5 @@
 import { Component, EventEmitter } from "@angular/core";
-import { MaterializeAction } from "angular2-materialize";
+//import { MaterializeAction } from "angular2-materialize";
 
 @Component({
     selector: 'post-action',
@@ -7,6 +7,8 @@ import { MaterializeAction } from "angular2-materialize";
 })
 
 export class PostsActionComponent{
+
+    /*
     modalActions = new EventEmitter<string|MaterializeAction>();
     openModal() {
         this.modalActions.emit({action:"modal",params:['open']});
@@ -14,4 +16,5 @@ export class PostsActionComponent{
     closeModal() {
         this.modalActions.emit({action:"modal",params:['close']});
     }
+    */
 }

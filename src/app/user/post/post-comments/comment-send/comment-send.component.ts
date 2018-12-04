@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ValidateWhiteSpace } from '../../../../shared/helpers/validator/white-space';
+import { ValidateWhiteSpace } from '../../../shared/helpers/validator/white-space';
 
 @Component({
   selector: 'app-comment-send',

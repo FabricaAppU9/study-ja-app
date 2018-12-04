@@ -16,8 +16,7 @@ export class PostComponent implements OnInit{
     post: any[] = [];
 
     constructor(
-        private activatedRoute: ActivatedRoute,
-        private postService: PostService
+        private activatedRoute: ActivatedRoute
         ){}
 
     ngOnInit(){
@@ -26,19 +25,6 @@ export class PostComponent implements OnInit{
                 this.id = params['id'];
             }
         )
-
-        this.carregaPost(this.id);
-    }
-
-    carregaPost(id: number){
-        this.postService
-            .listPost(id)
-            .subscribe(
-                post => {
-                    this.post = post;
-                    console.log(post);
-                }
-            )
     }
 
     ngOnDestroy(){

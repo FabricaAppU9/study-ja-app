@@ -13,43 +13,33 @@ import { RouterModule } from "@angular/router";
 import { UserRoutingModule } from "./user.routing.module";
 
 /*
-* 3. COMPONENTS DA APLICAÇÃO 
-*/
-import { SignupComponent } from './signup/signup.component';
-
-/*
 * 4. MODULOS DA APLICAÇÃO 
 */
 import { HomeModule } from "./home/home.module";
+import { PostModule } from "./post/post.module";
 import { ProfileModule } from "./profile/profile.module";
 import { SigninModule } from "./signin/signin.module";
+import { SignupModule } from "./signup/signup.module";
 
-/*
-* 5. MODULO DE TERCEIROS
-*/
-import { MaterializeModule } from 'angular2-materialize';
-import { HeaderModule } from "./shared/components/header/header.module";
 
 
 @NgModule({
     imports: [
         // 1. MODULOS DO ANGULAR
         CommonModule,
+        RouterModule,
+
+        // 2. MODULO DE ROTEAMENTO DAS FUNCIONALIDADES DO USUARIO
         UserRoutingModule,
 
         // 4. MODULO DA APLICAÇÃO
-        HeaderModule,
         HomeModule,
+        PostModule,
         ProfileModule,
-        RouterModule,
         SigninModule,
-
-        // 5. MODULOS DE TERCEIROS
-        MaterializeModule
+        SignupModule
     ],
-    declarations: [ 
-        SignupComponent,
-    ],
+    declarations: [ ],
     exports: [ ],
     providers: [ ]
 })

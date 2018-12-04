@@ -20,6 +20,7 @@ import { AdminComponent } from "./admin.component";
 import { UsersListComponent } from "./users/users-list/users-list.component";
 import { PostsModule } from "./posts/posts.module";
 import { BreadcrumbComponent } from "./shared/components/breadcrumb/breadcrumb.component";
+import { LoginComponent } from "./login/login.component";
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { BreadcrumbComponent } from "./shared/components/breadcrumb/breadcrumb.c
         UsersComponent,
         HeaderComponent,
         SidebarComponent,
-        BreadcrumbComponent
+        BreadcrumbComponent,
+        LoginComponent
     ],
     exports: [
             

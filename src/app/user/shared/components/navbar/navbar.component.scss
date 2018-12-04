@@ -1,0 +1,42 @@
+.logo{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 15px;
+}
+
+.dropdown-button{
+    font-size: 0.9em;
+
+    .menu-icon{
+        display: inline-block;
+        padding: 0;
+        line-height: 15px;
+        height: 15px;
+        font-size: 1.6em;
+        vertical-align: middle;
+    }
+}
+
+.collection{
+    min-width: 200px;
+}
+
+.user-menu{
+    min-width: 280px;
+    background-color:rgba(0, 0, 0, 0.8) !important;
+    .collection-item{
+        .title{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.links{
+    padding: 0; 
+}
+
+.user-image{
+    width: 30px;
+    margin-top: 15px;
+}  

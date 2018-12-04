@@ -1,42 +1,48 @@
+/**
+ * @USER MODULO - CARREGA TODAS AS FUNCIONALIDADES DO USUARIO
+ * 
+ * 1. MODULO DO ANGULAR
+ */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
+/*
+* 2. COMPONENTES DO ANGULAR
+*/
 import { AppComponent } from './app.component';
 
+/*
+* 3. MODULOS DA APLICAÇÃO
+*/
 import { AdminModule } from './admin/admin.module';
 import { UserModule } from './user/user.module';
 
+/*
+* 4. MODULO DE ROTEAMENTO DAS FUNCIONALIDADES DO USUARIO
+*/
 import { AppRoutingModule } from './app.routing.module';
-//import { AdminComponent } from './admin/admin.component';
-import { ErrorsModule } from './shared/errors/errors.module';
-import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './admin/login/login.component';
-import { AuthService } from './shared/core/auth/auth.service';
-
-import { PlatformDetectorService } from './shared/core/plataform-detector/platform-detector.service';
-import { TokenService } from './shared/core/token/token.service';
-import { Signup } from './shared/core/signup/signup.service';
-
 
 @NgModule({
   declarations: [
+    // 2. COMPONENTES DO ANGULAR
     AppComponent,
-    LoginComponent
   ],
   imports: [
+    // 1. MODULO DO ANGULAR
     BrowserModule,
+    HttpClientModule,
+    
+    // 4. MODULO DE ROTEAMENTO DAS FUNCIONALIDADES DO USUARIO
     AppRoutingModule,
+
+    // 3. MODULOS DA APLICAÇÃO
     AdminModule,
-    UserModule,
-    ErrorsModule,
-    HttpClientModule
+    UserModule
   ],
-  providers: [
-    AuthService,
-    PlatformDetectorService,
-    TokenService,
-    Signup
-  ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    // 1. MODULO DO ANGULAR
+    AppComponent
+  ]
 })
 export class AppModule { }

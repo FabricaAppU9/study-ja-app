@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
-const API = "localhost:3000/resumos";
+//const API = "localhost:3000/resumos";
 
 @Injectable()
 

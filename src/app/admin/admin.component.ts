@@ -1,5 +1,5 @@
 import { Component, EventEmitter } from "@angular/core";
-import { MaterializeAction } from 'angular2-materialize';
+//import { MaterializeAction } from 'angular2-materialize';
 
 @Component({
     templateUrl: './admin.component.html',
@@ -7,6 +7,8 @@ import { MaterializeAction } from 'angular2-materialize';
 })
 
 export class AdminComponent{
+
+  /*
     //...
     modalActions = new EventEmitter<string|MaterializeAction>();
     openModal() {
@@ -15,4 +17,5 @@ export class AdminComponent{
     closeModal() {
       this.modalActions.emit({action:"modal",params:['close']});
     }
+    */
 }

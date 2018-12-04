@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { tap } from "rxjs/operators";
-import { TokenService } from "../token/token.service";
+import { UserService } from "../user/user.service";
 
 const API_URL = 'https://studyja-api.azurewebsites.net/';
 
@@ -12,7 +12,7 @@ export class AuthService{
 
     constructor(
         private http: HttpClient,
-        private tokenService: TokenService
+        private userService: UserService
         ){}
 
     authenticate(email: string, senha: string){
@@ -23,7 +23,9 @@ export class AuthService{
             ).pipe(tap(
                 res => {
                     const authToken = res.body['token'];
-                    this.tokenService.setToken(authToken);
+                    this.userService.setToken(authToken);
+
+                    console.log('Authenticated with token: ' + authToken);
                 }
             ))
     }   

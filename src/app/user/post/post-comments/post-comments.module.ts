@@ -1,8 +1,16 @@
+/**
+ * @POST-COMMENTS MODULO - CARREGA TODAS AS FUNCIONALIDADES DE POSTAGEM DE COMENTARIO
+ * 
+ * 1. MODULOS DO ANGULAR
+ */
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 
-import { CommentsComponent } from './comments.component';
+/*
+* 2. COMPONENTES DA APLICAÇÃO
+*/
+import { CommentsComponent } from './post-comments.component';
 import { CommentSendComponent } from './comment-send/comment-send.component';
 import { ThumbnailUserComponent } from './thumbnail-user/thumbnail-user.component';
 import { CommentComponent } from './comment/comment.component';
@@ -11,6 +19,7 @@ import { CommentLikesComponent } from "./comment-likes/comment-likes.component";
 
 @NgModule({
     declarations:[
+        // 2. COMPONENTES DA APLICAÇÃO
         CommentsComponent,
         CommentSendComponent,
         ThumbnailUserComponent,
@@ -19,11 +28,13 @@ import { CommentLikesComponent } from "./comment-likes/comment-likes.component";
         CommentLikesComponent,
     ],
     imports:[
+        // 1. MODULOS DO ANGULAR
         CommonModule,
         ReactiveFormsModule,
         FormsModule
     ],
     exports:[
+        // 2. COMPONENTES DA APLICAÇÃO
         CommentsComponent,
         CommentSendComponent,
         ThumbnailUserComponent,
@@ -36,4 +47,4 @@ import { CommentLikesComponent } from "./comment-likes/comment-likes.component";
     ]
 })
 
-export class CommentsModule{}
+export class PostCommentsModule{}
