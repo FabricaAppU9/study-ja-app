@@ -21,6 +21,10 @@ import { AuthGuard } from './shared/core/auth/auth.guard';
 
 const appRoutes: Routes = [
     {
+        path: '',
+        component: SigninComponent
+    },
+    {
         // 2. ROTA PARA ACESSO AO LOGIN DO ADMINISTRADOR
         path: 'admin',
         component: LoginComponent
@@ -36,6 +40,7 @@ const appRoutes: Routes = [
         path: 'signup',
         component: SignupComponent
     }
+    
 ];
 
 @NgModule({

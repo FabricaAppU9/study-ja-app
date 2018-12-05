@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core";
+import { Post } from "../post-list";
 
 @Component({
     selector: 'card-resume',
@@ -8,7 +9,7 @@ import { Component, Input } from "@angular/core";
 
 export class PostCardComponent{
 
-    @Input('posts') post: any[];
-    @Input('title') title: String;
-    @Input('postType') type: String;
+    @Input('posts') post: Post;
+    @Input('title') title: string;
+    @Input('postType') type: string;
 }

@@ -9,12 +9,12 @@ import { ValidateWhiteSpace } from '../../../shared/helpers/validator/white-spac
 })
 export class CommentSendComponent implements OnInit {
 
-  private user = {
+  public user = {
     name: "Sidney Novais",
     photo: "https://www.yourfirstpatient.com/assets/default-user-avatar-thumbnail@2x-ad6390912469759cda3106088905fa5bfbadc41532fbaa28237209b1aa976fc9.png"
   }
 
-  private form: FormGroup;
+  form: FormGroup;
 
   @Output() newComment = new EventEmitter();
 

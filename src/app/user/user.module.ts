@@ -21,8 +21,6 @@ import { ProfileModule } from "./profile/profile.module";
 import { SigninModule } from "./signin/signin.module";
 import { SignupModule } from "./signup/signup.module";
 
-
-
 @NgModule({
     imports: [
         // 1. MODULOS DO ANGULAR
@@ -39,7 +37,7 @@ import { SignupModule } from "./signup/signup.module";
         SigninModule,
         SignupModule
     ],
-    declarations: [ ],
+    declarations: [],
     exports: [ ],
     providers: [ ]
 })

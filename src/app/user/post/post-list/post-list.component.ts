@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PostListService } from './post-list.service';
+import { Post } from './post-list';
 
 @Component({
     selector: 'post-list',
@@ -11,7 +12,7 @@ export class PostListComponent implements OnInit{
 
     @Input('title') title: string;
 
-    posts: any[] = [];
+    posts: Post[] = [];
     listSections: String[] = [
         'Livros',
         'Artigos'

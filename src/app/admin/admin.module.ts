@@ -21,6 +21,7 @@ import { UsersListComponent } from "./users/users-list/users-list.component";
 import { PostsModule } from "./posts/posts.module";
 import { BreadcrumbComponent } from "./shared/components/breadcrumb/breadcrumb.component";
 import { LoginComponent } from "./login/login.component";
+import { UsersDetailComponent } from "./users/users-detail/users-detail.component";
 
 
 @NgModule({
@@ -37,7 +38,9 @@ import { LoginComponent } from "./login/login.component";
         HeaderComponent,
         SidebarComponent,
         BreadcrumbComponent,
-        LoginComponent
+        LoginComponent,
+        UsersListComponent,
+        UsersDetailComponent
     ],
     exports: [
             

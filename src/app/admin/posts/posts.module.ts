@@ -14,7 +14,8 @@ import { CommonModule } from "@angular/common";
     ],
     exports: [
         PostsDetailComponent,
-        PostsListComponent
+        PostsListComponent,
+        MaterializeModule
     ],
     declarations: [
         PostsDetailComponent,

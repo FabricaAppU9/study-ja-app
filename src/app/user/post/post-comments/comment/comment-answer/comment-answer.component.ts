@@ -7,10 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CommentAnswerComponent implements OnInit {
 
-  private state_answer:string = "Ver";
-  private state_answer_icon:string = "arrow_drop_down";
-  private answers:any;
-  @Input('answers') private answers_user;
+  public state_answer:string = "Ver";
+  public state_answer_icon:string = "arrow_drop_down";
+  public answers:any;
+  @Input('answers') public answers_user;
   constructor() {
 
   }

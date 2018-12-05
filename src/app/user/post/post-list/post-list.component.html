@@ -1,5 +1,5 @@
 <section class="post-section">
-    <h6>{{titulo}}</h6>
+    <h6></h6>
     <div class="row" [flickity]="{cellAlign: 'left', prevNextButtons: false, pageDots: false}">
         <div class="col s5 m6" [flickityChild] *ngFor="let post of posts">
             <card-resume [posts]="post"></card-resume>

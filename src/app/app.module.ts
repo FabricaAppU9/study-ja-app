@@ -28,7 +28,7 @@ import { AuthGuard } from './shared/core/auth/auth.guard';
 @NgModule({
   declarations: [
     // 2. COMPONENTES DO ANGULAR
-    AppComponent,
+    AppComponent
   ],
   imports: [
     // 1. MODULO DO ANGULAR
