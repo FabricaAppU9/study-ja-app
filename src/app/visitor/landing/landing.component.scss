@@ -1,0 +1,61 @@
+nav{
+  height: 100px;
+
+  background-color: blue;
+  .logo-bar{
+    padding-top: 0.5em;
+    //padding-left: 12em;
+  }
+
+  ul{
+    padding-top: 1.5em;
+    //padding-right: 22em;
+    text-transform: uppercase;
+  }
+
+}
+.app{
+  h3{
+    font-size: 1.5em;
+  }
+  p{
+    font-size: 1.0em;
+  }
+}
+.team{
+  background-color: blue;
+  height: 17em;
+
+  .text{
+    padding-top: 4em;
+  }
+  h3{
+    font-size: 1.5em;
+    color: white;
+  }
+}
+.footer{
+  .logo{
+    background-color:  aqua;
+    height: 4em;
+    width: 100%;
+  }
+  .footerback{
+    background-color: blue;
+    height: 25em;
+    width: 100%;
+  }
+}
+
+.btn{
+  border-radius: 10px;
+}
+.image{
+  background-color: blue;
+  height: 230px;
+  width: 100%;
+}
+.pad{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}

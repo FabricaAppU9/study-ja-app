@@ -1,6 +1,6 @@
 /**
  * @USER MODULO - CARREGA TODAS AS FUNCIONALIDADES DO USUARIO
- * 
+ *
  * 1. MODULO DO ANGULAR
  */
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,17 +22,19 @@ import { UserModule } from './user/user.module';
 * 4. MODULO DE ROTEAMENTO DAS FUNCIONALIDADES DO USUARIO
 */
 import { AppRoutingModule } from './app.routing.module';
+import { LandingComponent } from './visitor/landing/landing.component';
 
 @NgModule({
   declarations: [
     // 2. COMPONENTES DO ANGULAR
     AppComponent,
+    LandingComponent,
   ],
   imports: [
     // 1. MODULO DO ANGULAR
     BrowserModule,
     HttpClientModule,
-    
+
     // 4. MODULO DE ROTEAMENTO DAS FUNCIONALIDADES DO USUARIO
     AppRoutingModule,
 
