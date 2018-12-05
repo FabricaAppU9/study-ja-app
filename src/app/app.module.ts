@@ -22,6 +22,8 @@ import { UserModule } from './user/user.module';
 * 4. MODULO DE ROTEAMENTO DAS FUNCIONALIDADES DO USUARIO
 */
 import { AppRoutingModule } from './app.routing.module';
+import { AuthGuard } from './shared/core/auth/auth.guard';
+
 
 @NgModule({
   declarations: [
@@ -43,6 +45,9 @@ import { AppRoutingModule } from './app.routing.module';
   bootstrap: [
     // 1. MODULO DO ANGULAR
     AppComponent
+  ],
+  providers: [
+    AuthGuard
   ]
 })
 export class AppModule { }

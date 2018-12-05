@@ -5,6 +5,7 @@
  */
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
 
 /*
 * 2. COMPONENTES DA APLICAÇÃO
@@ -24,6 +25,7 @@ import { MaterializeModule } from "angular2-materialize";
     imports: [
         // 1. MODULOS DO ANGULAR
         CommonModule,
+        RouterModule,
 
         // 3. MODULO DE TERCEIROS
         MaterializeModule

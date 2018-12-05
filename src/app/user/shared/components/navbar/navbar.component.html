@@ -32,7 +32,7 @@
               <p>{{ user.email }}</p>
             </li>
             <li class="collection-item links">
-                <a href="#!" class="collection-item">Meu Perfil</a>
+                <a [routerLink]="['/profile']" class="collection-item">Meu Perfil</a>
                 <a href="#!" class="collection-item">Sobre o Study Já</a>
                 <a (click)="onClickLogout()" class="collection-item">Sair</a>
             </li>

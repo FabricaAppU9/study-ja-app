@@ -13,6 +13,12 @@ import { SigninComponent } from './user/signin/signin.component';
 import { SignupComponent } from './user/signup/signup.component';
 import { LoginComponent } from './admin/login/login.component';
 
+/*
+* 3. GUARDA DE ROTAS DA APLICAÇÃO
+*/
+import { AuthGuard } from './shared/core/auth/auth.guard';
+
+
 const appRoutes: Routes = [
     {
         // 2. ROTA PARA ACESSO AO LOGIN DO ADMINISTRADOR
@@ -22,7 +28,8 @@ const appRoutes: Routes = [
     {
         // 2. ROTA PARA ACESSO AO LOGIN DO USUARIO
         path: 'signin',
-        component: SigninComponent
+        component: SigninComponent,
+        canActivate: [AuthGuard]
     },
     {
         // 2. ROTA PARA ACESSO AO CADASTRO DO USUARIO
