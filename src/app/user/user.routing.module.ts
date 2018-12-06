@@ -12,8 +12,8 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { ProfileSettingsComponent } from "./profile/profile-settings/profile-settings.component";
-import { PostComponent } from "./post/post.component";
-import { PostTextComponent } from "./post/post-text/post-text.component";
+//import { PostComponent } from "./post/posts.component";
+//import { PostTextComponent } from "./post/post-text/post-text.component";
 
 const userRoutes: Routes = [
     {
@@ -21,6 +21,7 @@ const userRoutes: Routes = [
         path: 'home',
         component: HomeComponent
     },
+    /*
     {
         // 2. POST - CARREGA UM POST SELECIONADO
         path: 'post/:id',
@@ -30,7 +31,8 @@ const userRoutes: Routes = [
         // 2. VIEWER - CARREGA O CONTEUDO DO POST (TEXTO)
         path: 'viewer/:id/:titulo',
         component: PostTextComponent
-    },
+    },*/
+    /*
     {
         // 2. PROFILE
         path: 'profile',
@@ -57,7 +59,7 @@ const userRoutes: Routes = [
                 component: ProfileComponent
             }
         ]
-    }
+    }*/
 ]
 
 @NgModule({

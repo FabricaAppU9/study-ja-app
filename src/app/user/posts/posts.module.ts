@@ -10,8 +10,9 @@ import { RouterModule } from "@angular/router";
 /*
 * 2. COMPONENTES DA APLICAÇÃO
 */
-import { PostComponent } from "./post.component";
+import { PostsComponent } from "./posts.component";
 import { PostTextComponent } from "./post-text/post-text.component";
+import { PostComponent } from "./post/post.component";
 
 /*
 * 3. MODULOS DA APLICAÇÃO
@@ -19,12 +20,17 @@ import { PostTextComponent } from "./post-text/post-text.component";
 import { PostCommentsModule } from "./post-comments/post-comments.module";
 import { PostListModule } from "./post-list/post-list.module";
 import { NavbarModule } from "../shared/components/navbar/navbar.module";
+import { PostsRoutingModule } from "./posts.routing.module";
+import { NotfoundComponent } from "../../shared/errors/not-found/not-found.component";
 
 @NgModule({
     declarations: [
         // 2. COMPONENTES DA APLICAÇÃO
         PostComponent,
-        PostTextComponent
+        PostsComponent,
+        PostTextComponent,
+
+        NotfoundComponent
     ],
     imports: [
         // 1. MODULOS DO ANGULAR
@@ -34,10 +40,12 @@ import { NavbarModule } from "../shared/components/navbar/navbar.module";
         // 3. MODULOS DA APLICAÇÃO
         PostCommentsModule,
         PostListModule,
-        NavbarModule
+        NavbarModule,
+
+        PostsRoutingModule
     ],
     exports: [],
     providers: []
 })
 
-export class PostModule{}
+export class PostsModule{}

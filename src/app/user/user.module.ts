@@ -16,8 +16,6 @@ import { UserRoutingModule } from "./user.routing.module";
 * 4. MODULOS DA APLICAÇÃO 
 */
 import { HomeModule } from "./home/home.module";
-import { PostModule } from "./post/post.module";
-import { ProfileModule } from "./profile/profile.module";
 import { SigninModule } from "./signin/signin.module";
 import { SignupModule } from "./signup/signup.module";
 
@@ -32,8 +30,6 @@ import { SignupModule } from "./signup/signup.module";
 
         // 4. MODULO DA APLICAÇÃO
         HomeModule,
-        PostModule,
-        ProfileModule,
         SigninModule,
         SignupModule
     ],

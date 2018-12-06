@@ -25,6 +25,14 @@ const appRoutes: Routes = [
         component: SigninComponent
     },
     {
+        path: 'profile',
+        loadChildren: './user/profile/profile.module#ProfileModule'
+    },
+    {
+        path: 'post',
+        loadChildren: './user/posts/posts.module#PostsModule'
+    },
+    {
         // 2. ROTA PARA ACESSO AO LOGIN DO ADMINISTRADOR
         path: 'admin',
         component: LoginComponent

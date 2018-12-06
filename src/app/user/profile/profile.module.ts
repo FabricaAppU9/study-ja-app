@@ -23,6 +23,7 @@ import { NavbarModule } from "../shared/components/navbar/navbar.module";
 * 4. DIRETIVAS DA APLICAÇÃO
 */
 import { LikeLabelDirective } from "../shared/directives/like-label.directive";
+import { ProfileRoutingModule } from "./profile.routing.module";
 
 @NgModule({
     declarations:[
@@ -40,7 +41,8 @@ import { LikeLabelDirective } from "../shared/directives/like-label.directive";
         RouterModule,
 
         // 3. MODULOS DA APLICAÇÃO
-        NavbarModule
+        NavbarModule,
+        ProfileRoutingModule
     ],
     exports: [],
     providers: []

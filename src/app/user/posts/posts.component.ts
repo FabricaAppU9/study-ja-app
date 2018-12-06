@@ -4,12 +4,12 @@ import { Subscription } from "rxjs/Subscription";
 import { PostService } from "./post.service";
 
 @Component({
-    selector: 'post',
-    templateUrl: './post.component.html',
-    styleUrls: ['./post.component.scss']
+    selector: 'posts',
+    templateUrl: './posts.component.html',
+    styleUrls: ['./posts.component.scss']
 })
 
-export class PostComponent implements OnInit{
+export class PostsComponent implements OnInit{
     
     id: number;
     inscricao: Subscription;

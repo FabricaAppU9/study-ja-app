@@ -18,7 +18,7 @@ import { RatingsComponents } from '../../shared/components/ratings/ratings.compo
 * 3. MODULOS DA APLICAÇÃO
 */
 import { NavbarModule } from '../shared/components/navbar/navbar.module';
-import { PostListModule } from '../post/post-list/post-list.module';
+import { PostListModule } from '../posts/post-list/post-list.module';
 
 @NgModule({
     declarations:[
