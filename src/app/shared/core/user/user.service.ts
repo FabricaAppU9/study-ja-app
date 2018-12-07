@@ -43,7 +43,7 @@ export class UserService {
   private decodeAndNotify(){
      const token = this.tokenService.getToken();
      //const user = jtw_decode(token) as User;
-     this.userSubject.next(user);
+     //this.userSubject.next(user);
      //console.log(user);
   }
 
