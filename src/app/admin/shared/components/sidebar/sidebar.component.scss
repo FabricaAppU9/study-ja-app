@@ -29,7 +29,7 @@ nav {
 	&.top-nav {
 		height: 122px;
 		-webkit-box-shadow: none;
-		-moz-box-shadow: none;		
+		-moz-box-shadow: none;
 		box-shadow: none;
 		a.page-title {
 			line-height: 122px;
@@ -119,8 +119,8 @@ nav {
     width: $sidenav-expanded-width;
     top: 0px;
     z-index: 9;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 
-    			0 1px 5px 0 rgba(0, 0, 0, 0.12), 
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    			0 1px 5px 0 rgba(0, 0, 0, 0.12),
     			0 3px 1px -2px rgba(0, 0, 0, 0.2);
     // background-color: $primary-color;
     -webkit-transition: .3s ease all;
@@ -135,7 +135,7 @@ nav {
 		padding: 21px 10px;
     white-space: nowrap;
     line-height: 17px !important;
-		a.brand-logo{			
+		a.brand-logo{
 			color: $white;
 			img{
       			height:18px;
@@ -148,14 +148,14 @@ nav {
 		    i{
 		    	font-size: 12px;
 		    	color: $white;
-		    }		    
+		    }
 		}
 	}
 }
 ul.side-nav {
 	&.leftside-navigation {
 		top: 64px;
-		overflow: hidden;	
+		overflow: hidden;
 		height: 100%;
 		hr {
 			display: block;
@@ -177,7 +177,7 @@ ul.side-nav {
 				font-family: $title;
 				font-size: 14px;
 				font-weight: 300;
-				white-space: nowrap; 
+				white-space: nowrap;
 			}
 			&.user-details {
 				background-image: url("../../../../../assets/images/gallary/12.png");
@@ -203,7 +203,7 @@ ul.side-nav {
 		.profile-btn {
 			margin: 0;
 			text-transform: capitalize;
-			padding: 0;			
+			padding: 0;
 			text-shadow: 1px 1px 1px #444;
 			font-size: 15px;
 		}
@@ -220,8 +220,8 @@ ul.side-nav {
 		/* Sidebar nav open close icons*/
 		&:after {
 				font-family: 'Material Icons';
-				content: "keyboard_arrow_right";				
-				color: #9e9e9e; 
+				content: "keyboard_arrow_right";
+				color: #9e9e9e;
 				font-size: 18px;
 				position: absolute;
     			right: 16px;
@@ -273,7 +273,7 @@ ul.side-nav {
 .user-roal {
 	color: $white;
 	margin-top: -16px;
-	font-size: 13px;	
+	font-size: 13px;
 	text-shadow: 1px 1px 1px #444;
 }
 .user-details .row {
