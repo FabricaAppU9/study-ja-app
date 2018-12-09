@@ -16,6 +16,11 @@ import { SignupComponent } from "./signup.component";
 */
 import { Signup } from "../../shared/core/signup/signup.service";
 
+/*
+* 4. IMPORT DE TERCEIROS
+*/
+import { MaterializeModule } from "angular2-materialize";
+
 @NgModule({
     declarations: [
         // 2. COMPONENTS DA APLICAÇÃO
@@ -23,7 +28,9 @@ import { Signup } from "../../shared/core/signup/signup.service";
     ],
     imports: [
         //1. MODULOS DO ANGULAR
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        //2. IMPORT DE TERCEIROS
+        MaterializeModule
     ],
     exports: [],
     providers: [
@@ -32,4 +39,4 @@ import { Signup } from "../../shared/core/signup/signup.service";
     ]
 })
 
-export class SignupModule{}
+export class SignupModule { }
