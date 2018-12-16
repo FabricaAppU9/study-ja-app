@@ -21,15 +21,13 @@
                 <input id="Sobrenome" type="text" class="validate" formControllName="lastName" required>
                 <label for="Sobrenome">Sobrenome</label>
             </div>
-              <div class="input-field col s12"> 
-                <select id="selectExample" materialize="material_select" class="validate" formControllName="genre" required>
-                    <option  disabled selected>Gênero:</option>
-                    <option value="M">Masculino</option>
-                    <option value="F">Feminino</option>
-                    <option value="O">Outro</option>
-
-                </select>
-              </div>
+            <div class="input-field col s2 right">
+              <select id="selectExample" materialize="material_select">
+                  <option value="" disabled selected>Filtrar por:</option>
+                  <option>Livros</option>
+                  <option>Artigos</option>
+              </select>
+          </div>
               <div class="input-field col s6">
                 <input type="text" id="data" placeholder="08-12-1999" class="validate" formControllName="from" required>
                 <label for="data" placeholder="Brasileira" >Naturalidade</label>

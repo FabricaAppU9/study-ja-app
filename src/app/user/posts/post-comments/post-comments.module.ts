@@ -16,6 +16,7 @@ import { ThumbnailUserComponent } from './thumbnail-user/thumbnail-user.componen
 import { CommentComponent } from './comment/comment.component';
 import { CommentAnswerComponent } from './comment/comment-answer/comment-answer.component';
 import { CommentLikesComponent } from "./comment-likes/comment-likes.component";
+import { LoadButtonComponent } from "../../shared/components/load-button/load-button.component";
 
 @NgModule({
     declarations:[
@@ -26,6 +27,7 @@ import { CommentLikesComponent } from "./comment-likes/comment-likes.component";
         CommentComponent,
         CommentAnswerComponent,
         CommentLikesComponent,
+        LoadButtonComponent
     ],
     imports:[
         // 1. MODULOS DO ANGULAR

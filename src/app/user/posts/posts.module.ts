@@ -23,6 +23,11 @@ import { NavbarModule } from "../shared/components/navbar/navbar.module";
 import { PostsRoutingModule } from "./posts.routing.module";
 import { NotfoundComponent } from "../../shared/errors/not-found/not-found.component";
 
+/*
+* 4. SERVIÇOS DA APLICAÇÃO
+*/
+import { PostService } from "./post/post.service";
+
 @NgModule({
     declarations: [
         // 2. COMPONENTES DA APLICAÇÃO
@@ -45,7 +50,10 @@ import { NotfoundComponent } from "../../shared/errors/not-found/not-found.compo
         PostsRoutingModule
     ],
     exports: [],
-    providers: []
+    providers: [
+        // 4. SERVIÇOS DA APLICAÇÃO
+        PostService
+    ]
 })
 
 export class PostsModule{}

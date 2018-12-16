@@ -12,6 +12,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SigninComponent } from './user/signin/signin.component';
 import { SignupComponent } from './user/signup/signup.component';
 import { LoginComponent } from './admin/login/login.component';
+import { LandingComponent } from './visitor/landing/landing.component';
 
 /*
 * 3. GUARDA DE ROTAS DA APLICAÇÃO
@@ -47,6 +48,11 @@ const appRoutes: Routes = [
         // 2. ROTA PARA ACESSO AO CADASTRO DO USUARIO
         path: 'signup',
         component: SignupComponent
+    },
+    {
+        // 3. ROTA PARA ACESSO AO HOME DO VISITANTE
+        path: 'landing',
+        component: LandingComponent
     }
     
 ];

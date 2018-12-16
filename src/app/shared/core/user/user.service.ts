@@ -1,6 +1,6 @@
 /**
- * @USER SERVICE - 
- * 
+ * @USER SERVICE -
+ *
  * 1. MODULOS DO ANGULAR
  */
 import { Injectable } from '@angular/core';
@@ -19,13 +19,13 @@ import { User } from '../user/user';
 /*
 * 3. IMPORT DE TERCEIROS
 */
-import * as jtw_decode from 'jwt-decode';
+import * as jtw_decode from 'jwt-decode'; 
 
 @Injectable()
 export class UserService {
 
   private userSubject = new BehaviorSubject<User>(null);
-  
+
   constructor(private tokenService: TokenService) {
     this.tokenService.hasToken() &&
       this.decodeAndNotify();
@@ -35,7 +35,7 @@ export class UserService {
     this.tokenService.setToken(token);
     this.decodeAndNotify();
   }
-  
+
   getUser(){
     return this.userSubject.asObservable();
   }
