@@ -10,17 +10,17 @@ import { PlatformDetectorService } from "../../shared/core/plataform-detector/pl
     styleUrls: ['./signin.component.scss']
 })
 
-export class SigninComponent implements OnInit{
+export class SigninComponent implements OnInit {
     loginForm: FormGroup;
     @ViewChild('emailInput') emailInput: ElementRef;
-    
+
     constructor(
         private formBuilder: FormBuilder,
         private auth: AuthService,
         private router: Router,
         private platformDetectorService: PlatformDetectorService
-    ){}
-    
+    ) { }
+
     ngOnInit(): void {
         this.loginForm = this.formBuilder.group({
             email: ['', Validators.required],
@@ -28,20 +28,20 @@ export class SigninComponent implements OnInit{
         })
     }
 
-    onClickLogin(){
+    onClickLogin() {
         const email = this.loginForm.get('email').value;
         const senha = this.loginForm.get('password').value;
-        
+
         this.auth
             .authenticate(email, senha)
             .subscribe(
                 () => this.router.navigate(['home']),
-                    err => {
-                        console.log("Falha na autenticação");
-                        this.loginForm.reset();
-                        this.platformDetectorService.isPlatformBrowser() && 
-                            this.emailInput.nativeElement.focus();
-                    }
+                err => {
+                    console.log("Falha na autenticação");
+                    this.loginForm.reset();
+                    this.platformDetectorService.isPlatformBrowser() &&
+                        this.emailInput.nativeElement.focus();
+                }
             );
     }
 }

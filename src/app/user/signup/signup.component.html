@@ -1,75 +1,80 @@
 <div class="container">
-    <div class="register-wrapper">
-      <div class="row">
-        <h4 class="red-text lighten-1 center-align">Cadastre-se</h4>
-        <div class="col s12 m8 offset-m2 l6 offset-l3">
-          <form  [formGroup]="loginForm" (submit)="onClickRegister()">
-            <div class="input-field col s12">
-              <input  formControlName="email" id="email" type="email" class="validate" required>
-              <label for="email">E-mail</label>       
-            </div>
-            <div class="input-field col s12">
-                <input id="password" type="password" class="validate" formControllName="password" required>
-                <label for="password">Senha</label>
-                <!-- <span class="helper-text right-align" data-error="wrong" data-success="right">Helper text</span>            -->
-              </div>
-            <div class="input-field col s6">
-              <input id="nome" type="text" class="validate" formControllName="name" required>
-              <label for="nome">Nome</label>
-            </div>
-            <div class="input-field col s6">
-                <input id="Sobrenome" type="text" class="validate" formControllName="lastName" required>
-                <label for="Sobrenome">Sobrenome</label>
-            </div>
-            <div class="input-field col s2 right">
-              <select id="selectExample" materialize="material_select">
-                  <option value="" disabled selected>Filtrar por:</option>
-                  <option>Livros</option>
-                  <option>Artigos</option>
-              </select>
+  <div class="register-wrapper">
+    <div class="row">
+      <h4 class="red-text lighten-1 center-align">Cadastre-se</h4>
+      <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <form [formGroup]="loginForm" (submit)="onClickRegister($event)">
+          <div class="input-field col s12">
+            <input formControlName="email" id="email" type="email" class="validate" required>
+            <label for="email">E-mail</label>
           </div>
-              <div class="input-field col s6">
-                <input type="text" id="data" placeholder="08-12-1999" class="validate" formControllName="from" required>
-                <label for="data" placeholder="Brasileira" >Naturalidade</label>
-              </div>
-              <div class="input-field col s12">
-                  <input id="CPF" type="number" data-length="11" class="validate" formControllName="cpf" required>
-                  <label for="CPF">CPF</label>
-                  <!-- <span class="helper-text right-align" data-error="wrong" data-success="right">Helper text</span>            -->
-              </div>
-              <div class="input-field col s12">
-                <select id="selectExample" materialize="material_select" class="validate" formControllName="institute" required>
-                    <option  disabled selected>Universidade</option>
-                    <option value="1">Universidade Nove De Julho</option>
-                </select>
-              </div>
-            <div class="col s12">
-              <p>
-                <label>
-                    <input class="filled-in" type="checkbox"/>
-                    <span>Deseja memorizar sua senha?</span>
-                </label>
-              </p>
-              <p>
-                <label>
-                    <input class="filled-in" type="checkbox"/>
-                    <span>Desejo receber notificaçoes em meu e-mail</span>
-                </label>
-              </p>
-            </div>
-            <div class="col s12">
-              <button class="btn waves-effect red lighten-1 col s12" type="submit" name="action">Criar Conta</button>
-            </div> 
-            <div class="col s12">
-              <p class="center-align">Já possui uma conta? <a routerLink="" class="red-text lighten-1">Clique aqui</a></p>
-            </div>
-            
-            <div class="col s12">
-              <p class="col s12 center-align">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium cumque laborum, et deleniti iste dolor in quam. </p>
-            </div>
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate" formControlName="password" required>
+            <label for="password">Senha</label>
+            <!-- <span class="helper-text right-align" data-error="wrong" data-success="right">Helper text</span>            -->
+          </div>
+          <div class="input-field col s6">
+            <input id="nome" type="text" class="validate" formControlName="name" required>
+            <label for="nome">Nome</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="Sobrenome" type="text" class="validate" formControlName="lastName" required>
+            <label for="Sobrenome">Sobrenome</label>
+          </div>
+          <div class="input-field col s12">
+            <select id="selectGenre" materialize="material_select" class="validate" required>
+              <option disabled selected value="N">Gênero:</option>
+              <option value="M">Masculino</option>
+              <option value="F">Feminino</option>
+              <option value="O">Outro</option>
+            </select>
+          </div>
+          <div class="input-field col s6">
+            <input type="text" id="data" placeholder="08-12-1999" class="validate" required>
+            <label for="data" placeholder="Brasileira">Data de nascimento</label>
+          </div>
+          <div class="input-field col s6">
+            <input type="text" id="from" formControlName="from">
+            <label for="from" placeholder="Brasileira">Naturalidade</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="CPF" type="number" data-length="11" class="validate" formControlName="cpf" required>
+            <label for="CPF">CPF</label>
+            <!-- <span class="helper-text right-align" data-error="wrong" data-success="right">Helper text</span>            -->
+          </div>
+          <div class="input-field col s12">
+            <select id="selectInstitute" materialize="material_select">
+              <option disabled selected value="0">Universidade</option>
+              <option value="Universidade Nove de Julho">Universidade Nove de Julho</option>
+            </select>
+          </div>
+          <div class="col s12">
+            <p>
+              <label>
+                <input class="filled-in" type="checkbox" />
+                <span>Deseja memorizar sua senha?</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input class="filled-in" type="checkbox" />
+                <span>Desejo receber notificaçoes em meu e-mail</span>
+              </label>
+            </p>
+          </div>
+          <div class="col s12">
+            <button class="btn waves-effect red lighten-1 col s12" type="submit" name="action">Criar Conta</button>
+          </div>
+          <div class="col s12">
+            <p class="center-align">Já possui uma conta? <a routerLink="" class="red-text lighten-1">Clique aqui</a></p>
+          </div>
+
+          <div class="col s12">
+            <p class="col s12 center-align">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+              cumque laborum, et deleniti iste dolor in quam. </p>
+          </div>
         </form>
-        </div>
       </div>
     </div>
   </div>
-
+</div>

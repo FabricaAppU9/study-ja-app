@@ -30,8 +30,7 @@ import { MaterializeModule } from "angular2-materialize";
     imports: [
         //1. MODULOS DO ANGULAR
         ReactiveFormsModule,
-
-        //4. IMPORT DE TERCEIROS
+        //2. IMPORT DE TERCEIROS
         MaterializeModule
     ],
     exports: [],
@@ -41,4 +40,4 @@ import { MaterializeModule } from "angular2-materialize";
     ]
 })
 
-export class SignupModule{}
+export class SignupModule { }

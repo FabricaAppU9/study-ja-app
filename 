@@ -1,0 +1,56 @@
+[1mdiff --git a/src/app/user/signin/signin.component.ts b/src/app/user/signin/signin.component.ts[m
+[1mindex d284f97..853c3b7 100644[m
+[1m--- a/src/app/user/signin/signin.component.ts[m
+[1m+++ b/src/app/user/signin/signin.component.ts[m
+[36m@@ -10,17 +10,17 @@[m [mimport { PlatformDetectorService } from "../../shared/core/plataform-detector/pl[m
+     styleUrls: ['./signin.component.scss'][m
+ })[m
+ [m
+[31m-export class SigninComponent implements OnInit{[m
+[32m+[m[32mexport class SigninComponent implements OnInit {[m
+     loginForm: FormGroup;[m
+     @ViewChild('emailInput') emailInput: ElementRef;[m
+[31m-    [m
+[32m+[m
+     constructor([m
+         private formBuilder: FormBuilder,[m
+         private auth: AuthService,[m
+         private router: Router,[m
+         private platformDetectorService: PlatformDetectorService[m
+[31m-    ){}[m
+[31m-    [m
+[32m+[m[32m    ) { }[m
+[32m+[m
+     ngOnInit(): void {[m
+         this.loginForm = this.formBuilder.group({[m
+             email: ['', Validators.required],[m
+[36m@@ -28,20 +28,20 @@[m [mexport class SigninComponent implements OnInit{[m
+         })[m
+     }[m
+ [m
+[31m-    onClickLogin(){[m
+[32m+[m[32m    onClickLogin() {[m
+         const email = this.loginForm.get('email').value;[m
+         const senha = this.loginForm.get('password').value;[m
+[31m-        [m
+[32m+[m
+         this.auth[m
+             .authenticate(email, senha)[m
+             .subscribe([m
+                 () => this.router.navigate(['home']),[m
+[31m-                    err => {[m
+[31m-                        console.log("Falha na autenticação");[m
+[31m-                        this.loginForm.reset();[m
+[31m-                        this.platformDetectorService.isPlatformBrowser() && [m
+[31m-                            this.emailInput.nativeElement.focus();[m
+[31m-                    }[m
+[32m+[m[32m                err => {[m
+[32m+[m[32m                    console.log("Falha na autenticação");[m
+[32m+[m[32m                    this.loginForm.reset();[m
+[32m+[m[32m                    this.platformDetectorService.isPlatformBrowser() &&[m
+[32m+[m[32m                        this.emailInput.nativeElement.focus();[m
+[32m+[m[32m                }[m
+             );[m
+     }[m
+ }[m
+\ No newline at end of file[m
