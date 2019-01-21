@@ -25,5 +25,10 @@ export class Signup {
                 usu_ins_id: 1
             })
     }
+
+    checkUserNameTaken(email: string){
+        return this.http
+                    .get(API_URL + 'usuario/' + email + '/email');
+    }
 }
 

@@ -5,6 +5,7 @@
  */
 import { NgModule } from "@angular/core";
 import { ReactiveFormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
 
 /*
 * 2. COMPONENTES DA APLICAÇÃO
@@ -16,11 +17,16 @@ import { SignupComponent } from "./signup.component";
 */
 
 import { Signup } from "../../shared/core/signup/signup.service";
+import { UserNotTakenValidatorService } from "../../shared/core/signup/user-not-taken.validator.service";
 
 /*
 * 4. IMPORT DE TERCEIROS
 */
 import { MaterializeModule } from "angular2-materialize";
+
+// 5. IMPORTS DA APLICAÇÃO
+import { VMessageModule } from "../shared/helpers/vmessage/vmessage.module";
+
 
 @NgModule({
     declarations: [
@@ -29,14 +35,19 @@ import { MaterializeModule } from "angular2-materialize";
     ],
     imports: [
         //1. MODULOS DO ANGULAR
+        CommonModule,
         ReactiveFormsModule,
         //2. IMPORT DE TERCEIROS
-        MaterializeModule
+        MaterializeModule,
+
+        // 5. IMPORTS DA APLICAÇÃO
+        VMessageModule
     ],
     exports: [],
     providers: [
         // 3. SERVIÇOS DA APLICAÇÃO
-        Signup
+        Signup,
+        UserNotTakenValidatorService
     ]
 })
 

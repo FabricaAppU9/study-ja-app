@@ -1,3 +1,5 @@
+import { TagContentType } from "@angular/compiler";
+
 export interface Post{
     tra_id:number,
     tra_usu_id:number,
@@ -14,5 +16,10 @@ export interface Post{
     liv_volume:number,
     liv_ano:number,
     liv_img_capa: null,
-    Mensagem: string
+    Mensagem: string,
+
+    // Campos de TAG
+    tag_id: number,
+    tag_nome: string,
+    tag_cor: string
 } 

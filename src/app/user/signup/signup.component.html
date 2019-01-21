@@ -3,15 +3,44 @@
     <div class="row">
       <h4 class="red-text lighten-1 center-align">Cadastre-se</h4>
       <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <form [formGroup]="loginForm" (submit)="onClickRegister($event)">
+        <form [formGroup]="signupForm" (submit)="onClickRegister($event)">
           <div class="input-field col s12">
             <input formControlName="email" id="email" type="email" class="validate" required>
             <label for="email">E-mail</label>
+            <vmessage 
+              *ngIf="signupForm.get('email').errors?.emailTaken"
+              text="E-mail já está sendo utilizado"
+            >
+            </vmessage>  
+            <vmessage 
+              *ngIf="signupForm.get('email').errors?.email && !signupForm.get('email').errors?.required"
+              text="Digite um e-mail valido"
+            >
+            </vmessage>  
+            <vmessage 
+              *ngIf="signupForm?.get('email').valid"
+              text="E-mail Disponivelss"
+            >
+            </vmessage>  
           </div>
           <div class="input-field col s12">
             <input id="password" type="password" class="validate" formControlName="password" required>
             <label for="password">Senha</label>
-            <!-- <span class="helper-text right-align" data-error="wrong" data-success="right">Helper text</span>            -->
+            <vmessage 
+              *ngIf="signupForm.get('password').errors?.required"
+              text="* Campo Obrigatório"
+            >
+            </vmessage>
+            <vmessage 
+              *ngIf="signupForm.get('password').errors?.minlength"
+              text="Tamanho minimo 8 caracteres"
+            >
+            </vmessage>
+            <vmessage 
+              *ngIf="signupForm.get('password').errors?.maxlength"
+              text="Tamanho maximo 14 caracteres"
+            >
+            </vmessage>
           </div>
           <div class="input-field col s6">
             <input id="nome" type="text" class="validate" formControlName="name" required>
@@ -20,6 +49,11 @@
           <div class="input-field col s6">
             <input id="Sobrenome" type="text" class="validate" formControlName="lastName" required>
             <label for="Sobrenome">Sobrenome</label>
+            <vmessage 
+              *ngIf="signupForm.get('lastName').errors?.required || signupForm.get('name').errors?.required"
+              text="* Campos Obrigatório"
+            >
+            </vmessage>
           </div>
           <div class="input-field col s12">
             <select id="selectGenre" materialize="material_select" class="validate" required>
@@ -36,6 +70,11 @@
           <div class="input-field col s6">
             <input type="text" id="from" formControlName="from">
             <label for="from" placeholder="Brasileira">Naturalidade</label>
+            <vmessage 
+              *ngIf="signupForm.get('from').errors?.required"
+              text="* Campos Obrigatório"
+            >
+            </vmessage>
           </div>
           <div class="input-field col s12">
             <input id="CPF" type="number" data-length="11" class="validate" formControlName="cpf" required>
@@ -63,7 +102,7 @@
             </p>
           </div>
           <div class="col s12">
-            <button class="btn waves-effect red lighten-1 col s12" type="submit" name="action">Criar Conta</button>
+            <button [disabled]="signupForm.invalid || signupForm.pending" class="btn waves-effect red lighten-1 col s12" type="submit" name="action">Criar Conta</button>
           </div>
           <div class="col s12">
             <p class="center-align">Já possui uma conta? <a routerLink="" class="red-text lighten-1">Clique aqui</a></p>

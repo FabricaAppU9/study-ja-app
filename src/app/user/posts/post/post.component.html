@@ -1,19 +1,20 @@
 <div class="container">
         <div class="row">
             <figure class="col s10 offset-s1 post-image">
-                <img src="https://http2.mlstatic.com/livro-harry-potter-e-a-cmara-secreta-capa-dura-novo-lacrado-D_NQ_NP_732839-MLB26492967186_122017-F.jpg" class="responsive-img" alt="">
+                <img src="{{ post?.tra_img_capa}}" class="responsive-img" [ngClass]="!post ? 'skeleton-image-post' : 'teste'" alt="">
             </figure>
     
             <div class="col s10 offset-s1 post-title">
                 <div class="row post-badges">
-                    <span class="new badge blue" data-badge-caption="Favorito"></span>
-                    <span class="new badge red" data-badge-caption="Mais curtido"></span>
+                    <span class="new badge {{ tag?.tag_cor }}" attr.data-badge-caption="{{ tag?.tag_nome }}" *ngFor="let tag of tags"></span>
                 </div>
-                <h1>Vinte mil léguas submarinas</h1>
+                <h1 [ngClass]="!post ? 'skeleton-title-sm' : 'teste'">{{ post?.liv_nome }}</h1>
             </div>
     
             <div class="col s10 offset-s1 post-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aspernatur eius quo dolor optio, quis harum possimus, beatae provident laboriosam quaerat dignissimos consectetur dolores nisi et! Doloribus ad harum quia!</p>
+                <p [ngClass]="!post ? 'skeleton-descript-post' : 'teste'">
+                    {{ post?.tra_descricao }}
+                </p>
             </div>
     
             <div class="col s10 offset-s1 post-actions">

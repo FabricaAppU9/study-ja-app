@@ -6,6 +6,7 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
+import { HttpModule } from '@angular/http';
 
 /*
 * 2. COMPONENTES DA APLICAÇÃO
@@ -41,6 +42,7 @@ import { PostService } from "./post/post.service";
         // 1. MODULOS DO ANGULAR
         CommonModule,
         RouterModule,
+        HttpModule,
 
         // 3. MODULOS DA APLICAÇÃO
         PostCommentsModule,

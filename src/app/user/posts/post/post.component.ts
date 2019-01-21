@@ -14,6 +14,7 @@ export class PostComponent{
     id: number;
     inscricao: Subscription;
     post: Post;
+    tags: Post;
 
     constructor(
         private activatedRoute: ActivatedRoute,
@@ -34,8 +35,9 @@ export class PostComponent{
        this.postService.
             getResumo(this.id)
             .subscribe( post => {
-                this.post = post,
-                console.log(this.post)
+                this.post = post[0],
+                this.tags = post,
+                console.log(this.post);
             })
     }
 

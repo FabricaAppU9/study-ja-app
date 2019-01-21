@@ -1,0 +1,36 @@
+//
+// @Skeleton Screen 
+// Created at: 08-01-2019
+// Updated at: ?
+// Developer: Rafael Marinho
+
+@import "../_base/colors";
+
+.skeleton{
+    border-radius: 2px;
+
+    &-title{
+        &-sm{
+            min-height: 30px;
+            min-width: 100%;
+            background-color: $pre_loader_bg;
+        }
+    }
+
+    &-image{
+        &-post{
+            min-height: 390px;
+            min-width: 100%;
+            background-color: $pre_loader_bg;
+        }
+    }
+
+    &-descript{
+        &-post{
+            min-height: 90px;
+            min-width: 100%;
+            background-color: $pre_loader_bg;
+        }
+    }
+}
+
