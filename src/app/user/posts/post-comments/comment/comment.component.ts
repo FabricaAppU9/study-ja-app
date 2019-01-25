@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Comments } from '../post-comments';
 
 @Component({
   selector: 'app-comment',
@@ -7,11 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CommentComponent implements OnInit {
 
-  @Input('comment') comment:any;
+  @Input('comment') comment: Comments;
   @Input('photo') photo;
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

@@ -18,6 +18,11 @@ import { CommentAnswerComponent } from './comment/comment-answer/comment-answer.
 import { CommentLikesComponent } from "./comment-likes/comment-likes.component";
 import { LoadButtonComponent } from "../../shared/components/load-button/load-button.component";
 
+/*
+* 3. SERVIÇOS DA APLICAÇÃO
+*/
+import { PostCommentsService } from "./post-comments.service";
+
 @NgModule({
     declarations:[
         // 2. COMPONENTES DA APLICAÇÃO
@@ -42,10 +47,11 @@ import { LoadButtonComponent } from "../../shared/components/load-button/load-bu
         ThumbnailUserComponent,
         CommentComponent,
         CommentAnswerComponent,
-        CommentLikesComponent,
+        CommentLikesComponent
     ],
     providers:[
-
+        // 3. Serviços da Aplicação
+        PostCommentsService
     ]
 })
 

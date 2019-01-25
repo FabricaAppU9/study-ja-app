@@ -29,6 +29,7 @@ import { NotfoundComponent } from "../../shared/errors/not-found/not-found.compo
 */
 import { PostService } from "./post/post.service";
 
+
 @NgModule({
     declarations: [
         // 2. COMPONENTES DA APLICAÇÃO

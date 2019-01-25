@@ -1,5 +1,3 @@
-import { TagContentType } from "@angular/compiler";
-
 export interface Post{
     tra_id:number,
     tra_usu_id:number,

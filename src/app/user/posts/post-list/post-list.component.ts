@@ -13,6 +13,8 @@ export class PostListComponent implements OnInit{
     @Input('title') title: string;
 
     posts: Post[] = [];
+    loading: boolean = true;
+
     listSections: String[] = [
         'Livros',
         'Artigos'
@@ -30,7 +32,8 @@ export class PostListComponent implements OnInit{
             .listFromPosts('LIVRO')
             .subscribe(
                 posts => {
-                this.posts = posts
+                this.posts = posts,
+                this.loading = false;
             });
     }
 }

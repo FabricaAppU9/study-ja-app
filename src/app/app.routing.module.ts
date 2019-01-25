@@ -47,7 +47,8 @@ const appRoutes: Routes = [
     {
         // 2. ROTA PARA ACESSO AO CADASTRO DO USUARIO
         path: 'signup',
-        component: SignupComponent
+        component: SignupComponent,
+        canActivate: [AuthGuard]
     },
     {
         // 3. ROTA PARA ACESSO AO HOME DO VISITANTE

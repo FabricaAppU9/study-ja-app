@@ -1,4 +1,5 @@
 <section class="post-section">
+    <!--loading-spin *ngIf="!loading"></loading-spin-->
     <h6></h6>
     <div class="row" [flickity]="{cellAlign: 'left', prevNextButtons: false, pageDots: false}">
         <div class="col s5 m6" [flickityChild] *ngFor="let post of posts">

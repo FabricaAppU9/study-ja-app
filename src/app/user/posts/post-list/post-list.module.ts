@@ -14,6 +14,7 @@ import { PostListComponent } from "./post-list.component";
 import { PostCardComponent } from "./post-card/post-card.component";
 import { PostsPhotoComponent } from "./post-card/posts-photo/posts-photo.component";
 import { PostsDescriptionComponent } from "./post-card/posts-description/posts-description.component";
+import { LoadingComponent } from "../../../shared/components/loading/loading.component";
 
 /*
 * 3. MODULOS DE TERCEIROS
@@ -31,7 +32,8 @@ import { PostListService } from "./post-list.service";
         PostListComponent,
         PostCardComponent,
         PostsPhotoComponent,
-        PostsDescriptionComponent
+        PostsDescriptionComponent,
+        LoadingComponent
     ],
     imports: [
         // 1. MODULOS DO ANGULAR

@@ -6,7 +6,7 @@
     
             <div class="col s10 offset-s1 post-title">
                 <div class="row post-badges">
-                    <span class="new badge {{ tag?.tag_cor }}" attr.data-badge-caption="{{ tag?.tag_nome }}" *ngFor="let tag of tags"></span>
+                    <span class="new badge {{ tag?.tag_color }}" attr.data-badge-caption="{{ tag?.tag_nome }}" *ngFor="let tag of tags"></span>
                 </div>
                 <h1 [ngClass]="!post ? 'skeleton-title-sm' : 'teste'">{{ post?.liv_nome }}</h1>
             </div>
