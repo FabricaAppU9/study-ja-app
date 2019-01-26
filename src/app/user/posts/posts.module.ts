@@ -28,6 +28,8 @@ import { NotfoundComponent } from "../../shared/errors/not-found/not-found.compo
 * 4. SERVIÇOS DA APLICAÇÃO
 */
 import { PostService } from "./post/post.service";
+import { MaterializeModule } from "angular2-materialize";
+import { PostTextModule } from "./post-text/post-text.module";
 
 
 @NgModule({
@@ -35,7 +37,7 @@ import { PostService } from "./post/post.service";
         // 2. COMPONENTES DA APLICAÇÃO
         PostComponent,
         PostsComponent,
-        PostTextComponent,
+        //PostTextComponent,
 
         NotfoundComponent
     ],
@@ -49,6 +51,7 @@ import { PostService } from "./post/post.service";
         PostCommentsModule,
         PostListModule,
         NavbarModule,
+        PostTextModule,
 
         PostsRoutingModule
     ],

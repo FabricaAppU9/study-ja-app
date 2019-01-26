@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter } from "@angular/core";
 import { Subscription } from "rxjs";
 import { ActivatedRoute } from "@angular/router";
 import { PostService } from "./post.service";
@@ -15,6 +15,7 @@ export class PostComponent{
     inscricao: Subscription;
     post: Post;
     tags: Post;
+    sendPost = new EventEmitter<Post>();
 
     constructor(
         private activatedRoute: ActivatedRoute,
@@ -37,7 +38,7 @@ export class PostComponent{
             .subscribe( post => {
                 this.post = post[0],
                 this.tags = post,
-                console.log(this.post);
+                this.postService.emitirPost(post);
             })
     }
 

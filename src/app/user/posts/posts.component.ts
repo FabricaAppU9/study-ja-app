@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Subscription } from "rxjs/Subscription";
 
+
 @Component({
     selector: 'posts',
     templateUrl: './posts.component.html',
@@ -13,6 +14,7 @@ export class PostsComponent implements OnInit{
     id: number;
     inscricao: Subscription;
     post: any[] = [];
+    postId: string;
 
     constructor(
         private activatedRoute: ActivatedRoute

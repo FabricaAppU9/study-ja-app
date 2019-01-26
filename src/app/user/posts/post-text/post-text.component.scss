@@ -1,3 +1,8 @@
+@import '../../../../assets/styles/_base/colors';
+
+.container{
+    height: 100%;
+}
 .icons{
     padding-bottom: 0.1em;
     i{padding: 0.3em 0.3em;}
@@ -13,6 +18,9 @@
 }
 .row .text{
     font-size: 1.3em;
+}
+.text{
+    text-align: justify;
 }
 .font-bold{
     font-weight: bold;
@@ -32,6 +40,14 @@ span{
     padding-top: 0em;
     vertical-align: bottom;
     font-weight: bold;
-    
+}
+
+.darkTheme{
+    background: $darkColorTheme !important;
+    height: 100%;
+
+    p, h1, a, i, span{
+        color: $textDarkColorTheme !important;
+    }
 }
 

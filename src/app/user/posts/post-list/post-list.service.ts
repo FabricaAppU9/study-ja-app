@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 
 import { Post } from "./post-list";
 
-const API = 'http://localhost:3000/resumos/livros';
+const API = 'https://studyja-api.azurewebsites.net/resumos/livros';
 
 @Injectable()
 

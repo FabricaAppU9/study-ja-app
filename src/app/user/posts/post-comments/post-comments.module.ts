@@ -22,6 +22,7 @@ import { LoadButtonComponent } from "../../shared/components/load-button/load-bu
 * 3. SERVIÇOS DA APLICAÇÃO
 */
 import { PostCommentsService } from "./post-comments.service";
+import { MaterializeModule } from "angular2-materialize";
 
 @NgModule({
     declarations:[
@@ -38,7 +39,8 @@ import { PostCommentsService } from "./post-comments.service";
         // 1. MODULOS DO ANGULAR
         CommonModule,
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        MaterializeModule
     ],
     exports:[
         // 2. COMPONENTES DA APLICAÇÃO

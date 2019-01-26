@@ -1,100 +1,83 @@
-<div class="container">
-    <div class="col back">
-        <a href="#"><i class="material-icons inline-icon">navigate_before</i><span>Voltar</span></a>
-    </div>
-
-    <div class="row center title">
-        <h1>Vinte mil léguas submarinas</h1>
-        <p>Autor: Rafael Marinho</p>
-    </div>
-
-    <div class="row right">
-        <div class="col s-12 icons">
-            <a href="#"><span class="cicon">A+ </span></a>
-            <a href="#"><span class="cicon">A- </span></a>
-            <a href="#"><i class="material-icons">format_size</i></a>
-            <a href="#"><i class="material-icons">sms</i></a>
-            <a href="#"><i class="material-icons">brightness_6</i></a>  
+<div class="container-theme" [ngClass]="{'darkTheme': colorThemeStatus, 'whiteTheme': !colorThemeStatus}">
+    <div class="container">
+        <div class="col back">
+            <a [routerLink]="['/post', id ]" [queryParams]="{ tipo: post?.tra_tipo }"><i class="material-icons inline-icon">navigate_before</i><span>Voltar</span></a>
         </div>
-    </div>
-
-    <div class="row">
-        <!-- Linha de ações do texto -->
-    </div>
-
-    <div class="row">
-        <div class="col s12">
-            <p class="text">Loorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet 
-                voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur 
-                ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, 
-                itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus 
-                consequatur ullam minus adipisci officiis.</p>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet 
-                        voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur 
-                        ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, 
-                        itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus 
-                        consequatur ullam minus adipisci officiis.</p>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet 
-                                voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur 
-                                ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, 
-                                itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur 
-                                adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus 
-                                consequatur ullam minus adipisci officiis.</p>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet 
-                                        voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur 
-                                        ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, 
-                                        itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur 
-                                        adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus 
-                                        consequatur ullam minus adipisci officiis.</p>
-                                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet 
-                                                voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                                Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur 
-                                                ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, 
-                                                itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur 
-                                                adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus 
-                                                consequatur ullam minus adipisci officiis.</p>
-                                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet 
-                                                        voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                                        Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur 
-                                                        ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, 
-                                                        itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus consequatur ullam minus adipisci officiis.Lorem ipsum dolor sit amet consectetur 
-                                                        adipisicing elit. Placeat, nulla dolorem. Incidunt praesentium provident assumenda, itaque blanditiis ut amet voluptatem pariatur cumque a harum repellendus 
-                                                        consequatur ullam minus adipisci officiis.</p>
-        </div>
-    </div>
-    <div class="row center">
-        <p class="font-bold">VOTAR</p>
-        <i class="material-icons">star_borderstar_borderstar_borderstar_borderstar_border</i>
-    </div>
     
-    <br><hr/><br>
+        <div class="row center title">
+            <h1>{{ post?.liv_nome }}</h1>
+            <p *ngIf="post?.usu_sexo == 'M'">
+                Autor: {{ post?.usu_nome }} {{ post?.usu_sobrenome}}
+            </p>
+            <p *ngIf="post?.usu_sexo == 'F'">
+                    Autora: {{ post?.usu_nome }} {{ post?.usu_sobrenome}}
+            </p>
+        </div>
+    
+        <div class="row right">
+            <div class="col s-12 icons">
+                <a href="#"><span class="cicon">A+ </span></a>
+                <a href="#"><span class="cicon">A- </span></a>
+                <a href="#"><i class="material-icons">format_size</i></a>
+                <a (click)="openModal()" class="modal-trigger"><i class="material-icons">sms</i></a>
+                <a (click)="colorTheme()"><i class="material-icons">brightness_6</i></a>  
+            </div>
+        </div>
 
-    <div class="container left">
-        <p class="font-bold">
-            Referencias:
-        </p>
-        <p class="">
-            PMI - Project Management Institute PMBOK
-        </p><br>
-
-        <p class="font-bold">
-            Autor:
-        </p>
-        <p class="">
-            Rafael Marinho
-        </p><br>
-            <p class="font-bold">Avaliação do Conteudo:</p>
-        <p class="">
-            Dr. João Andrade Silva<br>
-            Profº Mario Pedro Jr
-        </p>
+        <div id="modal1" class="modal bottom-sheet" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+            <div class="modal-content">
+                <div class="row">
+                    <h6>Comentários</h6>
+                    <app-comment-send (newComment)="newComment($event)"></app-comment-send>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Fechar</a>
+            </div>
+        </div>
+    
+        <div class="row">
+            <!-- Linha de ações do texto -->
+        </div>
+    
+        <div class="row">
+            <div class="col s12">
+                <p class="text">
+                    {{ post?.tra_texto }}
+                </p>
+            </div>
+        </div>
+        <div class="row center">
+            <p class="font-bold">VOTAR</p>
+            <i class="material-icons">star_borderstar_borderstar_borderstar_borderstar_border</i>
+        </div>
+        
+        <br><hr/><br>
+        
+        <div class="row">
+            <div class="container left">
+                <p class="font-bold">
+                    Referencias:
+                </p>
+                <p>
+                    PMI - Project Management Institute PMBOK
+                </p>
+                <p class="font-bold" *ngIf="post?.usu_sexo == 'M'">
+                    Autor:
+                </p>
+                <p class="font-bold" *ngIf="post?.usu_sexo == 'F'">
+                    Autora: 
+                </p>
+                <p>
+                    {{ post?.usu_nome }} {{ post?.usu_sobrenome}}
+                </p>
+                <p class="font-bold">Avaliação do Conteudo:</p>
+                <p>
+                    Dr. João Andrade Silva
+                </p>
+            </div>
+        </div>
     </div>
-
 </div>
-<footer></footer>
+
+

@@ -15,6 +15,9 @@ export interface Post{
     liv_ano:number,
     liv_img_capa: null,
     Mensagem: string,
+    usu_sexo: string,
+    usu_nome: string,
+    usu_sobrenome: string
 
     // Campos de TAG
     tag_id: number,
